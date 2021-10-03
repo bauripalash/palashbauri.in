@@ -1,4 +1,4 @@
-image: peaceiris/hugo:v0.88.0-full
+image: klakegg/hugo:0.88.0-ext-ubuntu-ci
 
 variables:
     BASEURL: "https://palashbauri.in/"
