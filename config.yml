@@ -32,7 +32,6 @@ outputs:
         - RSS
     page:
         - HTML
-        - JSON
 
 params:
     env: development # to enable google analytics, opengraph, twitter-cards and schema.
