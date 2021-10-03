@@ -4,7 +4,7 @@
 
     {{ $slug := replace .RelPermalink "/" "" }}
 
-    {{- $apiendpoint := (printf "%s/%s/%s/%s/%s/%s" $.Site.Params.staticman.endpoint "gitlab" "bauripalash" "blog" "master" "comments") -}}
+    {{- $apiendpoint := (printf "%s/%s/%s/%s/%s/%s" $.Site.Params.staticman.endpoint "gitlab" "bauripalash" "bauripalash.gitlab.io" "main" "comments") -}}
   
     {{ if .Site.Data.comments }}
       {{ $comments := index $.Site.Data.comments $slug }}
