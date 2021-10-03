@@ -9,15 +9,13 @@ before_script:
     - apk update
     - apk add curl
     - apk add --update npm
+    - apk add --update hugo=0.88.1-r1
 
 pages:
     stage: deploy
     script:
     - apk add git
     - git submodule update --init
-    - curl -sSL https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz -o /tmp/hugo.tar.gz
-    - echo "${HUGO_CHECKSUM}  /tmp/hugo.tar.gz" | sha256sum -c
-    - tar xf /tmp/hugo.tar.gz hugo -C /tmp/ && cp /tmp/hugo /usr/bin
     - npm install
     - hugo --baseURL ${BASEURL}
     artifacts:
