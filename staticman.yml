@@ -1,6 +1,6 @@
 comments:
   allowedFields: ['name' , 'email' , 'comment']
-  branch: 'master'
+  branch: 'main'
   commitMessage: "New Comment in {options.slug} by {fields.author}"
   filename: 'comment-{@timestamp}'
   format: 'yaml'
@@ -10,7 +10,7 @@ comments:
       options:
         format: 'timestamp-seconds'
   moderation: false
-  name: 'Minimo'
+  name: 'palash'
   path: 'data/comments/{options.slug}'
   requiredFields: ['name' , 'email', 'comment']
   reCaptcha:
