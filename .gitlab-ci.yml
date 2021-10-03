@@ -1,4 +1,4 @@
-image: docker pull peaceiris/hugo:v0.88.0-full
+image: peaceiris/hugo:v0.88.0-full
 
 variables:
     BASEURL: "https://palashbauri.in/"
