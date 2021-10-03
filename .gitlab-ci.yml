@@ -1,11 +1,10 @@
-image: alpine:latest
+image: https://hub.docker.com/r/peaceiris/hugo
 
 variables:
     BASEURL: "https://palashbauri.in/"
 
 before_script:
     - apk update
-    - apk add hugo=0.88.1-r1
     - apk add --update npm
 
 
