@@ -1,17 +1,12 @@
-image: peaceiris/hugo
+image: docker pull peaceiris/hugo:v0.88.0-full
 
 variables:
     BASEURL: "https://palashbauri.in/"
-
-before_script:
-    - apk update
-    - apk add --update npm
 
 
 pages:
     stage: deploy
     script:
-    - apk add git
     - git submodule update --init
     - npm install
     - hugo --baseURL ${BASEURL}
