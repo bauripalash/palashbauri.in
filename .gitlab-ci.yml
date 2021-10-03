@@ -9,7 +9,7 @@ before_script:
     - apk update
     - apk add curl
     - apk add --update npm
-    - apk add --update hugo=0.88.1-r1
+    - apk add --update hugo
 
 pages:
     stage: deploy
