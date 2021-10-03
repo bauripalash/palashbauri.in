@@ -1,0 +1,27 @@
+image: alpine:latest
+
+variables:
+    BASEURL: "https://palashbauri.in/"
+    HUGO_VERSION: "0.88.1"
+    HUGO_CHECKSUM: "51850899dcd76f71c76004b9be28c7c1ea1b645d7227ff79534f773acd5e88fe"
+
+before_script:
+    - apk update
+    - apk add curl
+    - apk add nodejs
+
+pages:
+    stage: deploy
+    script:
+    - apk add git
+    - git submodule update --init
+    - curl -sSL https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz -o /tmp/hugo.tar.gz
+    - echo "${HUGO_CHECKSUM}  /tmp/hugo.tar.gz" | sha256sum -c
+    - tar xf /tmp/hugo.tar.gz hugo -C /tmp/ && cp /tmp/hugo /usr/bin
+    - npm install
+    - hugo --baseURL ${BASEURL}
+    artifacts:
+        paths:
+        - public
+    only:
+        - main
