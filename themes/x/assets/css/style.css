@@ -1280,3 +1280,48 @@ h6:hover .anchor {
 }
 
 /**/
+
+#comment_ok{
+  display: none;
+  color: green;
+  text-align: center;
+  height: 0;
+  width: 0;
+}
+
+#comment_ok:target{
+  border: 2px solid green;
+  border-radius: 6px;
+  display: block;
+  height: auto;
+  width: initial;
+}
+
+#comment_fail{
+  display: none;
+  color: red;
+  text-align: center;
+  height: 0;
+  width: 0;
+}
+
+#comment_fail:target{
+  border: 2px solid red;
+  display: block;
+  height: auto;
+  width: initial;
+}
+
+#closeok{
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+}
+
+#closefail{
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+}

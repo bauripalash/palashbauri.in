@@ -9,7 +9,7 @@ comments:
       type: date
       options:
         format: 'timestamp-seconds'
-  moderation: false
+  moderation: true
   name: 'palash'
   path: 'data/comments/{options.slug}'
   requiredFields: ['name' , 'email', 'comment']
