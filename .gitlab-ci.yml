@@ -2,14 +2,12 @@ image: alpine:latest
 
 variables:
     BASEURL: "https://palashbauri.in/"
-    HUGO_VERSION: "0.88.1"
-    HUGO_CHECKSUM: "51850899dcd76f71c76004b9be28c7c1ea1b645d7227ff79534f773acd5e88fe"
 
 before_script:
     - apk update
-    - apk add curl
+    - apk add hugo=0.88.1-r1
     - apk add --update npm
-    - apk add --update hugo
+
 
 pages:
     stage: deploy
