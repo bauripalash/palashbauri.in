@@ -1,4 +1,4 @@
-image: "https://hub.docker.com/r/peaceiris/hugo"
+image: peaceiris/hugo
 
 variables:
     BASEURL: "https://palashbauri.in/"
