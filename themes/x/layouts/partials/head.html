@@ -1,0 +1,78 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+{{- /* Title */}}
+<title>{{ if .IsHome }}  {{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
+
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="author" content="{{ .Site.Params.Author }}">
+
+
+
+{{- /* Styles */}}
+{{- $mainstyle := (resources.Get "css/style.css") }}
+{{- $stylesheet := $mainstyle | resources.PostCSS (dict "noMap" true) | resources.Minify}}
+<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+
+<!-- IndieWeb Identity -->
+
+{{ with .Site.Params.Email }}<link rel="me" href="mailto:{{ . }}">{{ end }}
+{{ with .Site.Params.Github }}<link rel="me" href="https://github.com/{{ . }}">{{ end }}
+{{ with .Site.Params.Twitter }}<link rel="me" href="https://twitter.com/{{ . }}">{{ end }}
+{{ with .Site.Params.Mastodon }}<link rel="me" href="{{ . }}">{{ end }}
+{{ with .Site.Params.Telegram }}<link rel="me" href="https://t.me/{{ . }}">{{ end }}
+
+<!-- II End -->
+
+<!--  -->
+<link rel="authorization_endpoint" href={{ .Site.Params.indie_auth_end | default "https://indieauth.com/auth" }} />
+<link rel="token_endpoint" href={{ .Site.Params.indie_token_end | default "https://tokens.indieauth.com/token" }} />
+<!--  -->
+
+{{ printf "<!-- OpenGraph Start-->" | safeHTML }}
+
+{{ template "_internal/opengraph.html" . }}
+
+{{ printf "<!-- OpenGraph End-->" | safeHTML }}
+
+{{ printf "<!-- Twitter Graph Start-->" | safeHTML }}
+
+{{ template "_internal/twitter_cards.html" . }}
+
+{{ printf "<!-- Twitter Graph End-->" | safeHTML }}
+
+{{ printf "<!-- Google News Start-->" | safeHTML }}
+
+{{ partial "google_news.html" . }}
+
+{{ printf "<!-- Google News End-->" | safeHTML }}
+
+{{ template "_internal/schema.html" . }}
+
+{{ partial "schema.html" . }}
+
+
+
+{{ if .Site.Params.enablesa }} 
+  <img src="https://py.palashbauri.in/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
+{{ end }}
+
+
+{{ if .OutputFormats.Get "RSS" }}
+  {{ with .OutputFormats.Get "RSS" }}
+    <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+    <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  {{ end }}
+{{ end }}
+
+
+{{- /* Generator */}}
+{{ hugo.Generator }}
+<link rel="shortcut icon" href='{{ "/images/icons/favicon.ico" | relURL }}' type="image/x-icon" />
+<link rel="icon" type="image/png" sizes="192x192"  href='{{ "/images/icons/android-icon-192x192.png" | relURL }}'>
+<link rel="icon" type="image/png" sizes="32x32" href='{{ "/images/icons/favicon-32x32.png" | relURL }}'>
+<link rel="icon" type="image/png" sizes="96x96" href='{{ "/images/icons/favicon-96x96.png" | relURL  }}'>

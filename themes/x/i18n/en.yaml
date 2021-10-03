@@ -1,0 +1,79 @@
+- id: prev_page
+  translation: "Prev page"
+
+- id: next_page
+  translation: "Next page"
+
+- id: read_time
+  translation:
+    one : "1 Minute"
+    other: "{{ .Count }} Minutes"
+
+- id: toc
+  translation: "Table of Contents"
+
+- id: translations
+  translation: "Translation"
+
+- id: home
+  translation: "Home"
+
+- id: edit_post
+  translation: "Suggest change"
+
+- id: code_copy
+  translation: "Copy"
+
+- id: code_copied
+  translation: "Copied!"
+
+- id: word_count
+  translation: "{{ .WordCount }} words"
+
+- id: publish_date_full
+  translation: '{{ .PublishDate.Day }} {{.PublishDate.Month }} {{ .PublishDate.Year }}'
+
+- id: archive
+  translation: "Archive"
+
+- id: about
+  translation: "Who?"
+
+- id: tags
+  translation: "Tags"
+
+- id: share_msg
+  translation: "Share with the universe"
+
+- id: commentRequest
+  translation: "If you liked (or disliked) my writings or found mistakes, Please do comment 🥺"
+
+- id: commentTime
+  translation: '{{. | time.Format ":time_medium"}} {{.Day}} {{ .Month}} {{$.Year}}'
+
+- id: commentAnchor
+  translation: "comment link 🔗"
+
+- id: commentNumber
+  translation: " comments"
+  
+- id: commentNil
+  translation: "Be first to share you precious comment 🙇"
+  
+- id: commentText
+  translation: "Write Comment* 📝"
+  
+- id: commentName
+  translation: "Your Name/Pseudoname* 🧑"
+  
+- id: commentEmail
+  translation: "Your Email* 📥"
+ 
+- id: commentSubmit
+  translation: "Submit 🚀"
+    
+- id: preCommentNumber
+  translation: "This comment has "
+
+- id: lastmod_date_full
+  translation: 'Last edited -> {{ .Lastmod.Day }} {{ .Lastmod.Month }} {{ .Lastmod.Year }}'

@@ -1,0 +1,93 @@
+<section class="staticman-comments">
+    
+    
+
+    {{ $slug := replace .RelPermalink "/" "" }}
+
+    {{- $apiendpoint := (printf "%s/%s/%s/%s/%s/%s" $.Site.Params.staticman.endpoint "gitlab" "bauripalash" "blog" "master" "comments") -}}
+  
+    {{ if .Site.Data.comments }}
+      {{ $comments := index $.Site.Data.comments $slug }}
+      {{ if $comments }}
+          <h3 class="com_count">{{ i18n "preCommentNumber"}} {{ len $comments  }} {{ i18n "commentNumber" }}</h3>
+      {{ else }}
+        <h3 class="com_count"> {{ i18n "commentNil" }} </h3>
+      {{ end }}
+  
+  
+      {{ $.Scratch.Set "hasComments" 0 }}
+      {{ range $index, $comments := (index $.Site.Data.comments $slug ) }}
+        {{ if not .parent }}
+          {{ $.Scratch.Add "hasComments" 1 }}
+          <article id="{{ ._id }}" class="staticman-comment">
+            <h4 class="comment-author">{{ .name }} 📣</h4>
+            
+            <p class="cblock"><div class="comment_content"><p>{{ .comment | markdownify }}</p></div></p>
+
+            <div class="comment_timestamp">
+              <p class="comment_permalink">
+              <a  href="#{{ ._id }}" title="Permalink to this comment" rel="me">
+                
+                [ {{ i18n "commentAnchor" }}]
+                  
+              </a></p>
+              
+              <p class="comment_time"> ⏰ {{ $ctime := (time (int .date) "Asia/Kolkata") }}{{$ctime | time.Format ":time_medium"}} ,  {{$ctime.Day}} {{ index $.Site.Data.months_bn (printf "%d" $ctime.Month)}} {{$ctime.Year}}</p>
+            </div>
+          </article>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  
+  <hr class="chr">
+  <h4> {{ i18n "commentRequest" }} </h4>
+  <form class="comment_form" method="post" action="{{ $apiendpoint }}">
+    <input type="hidden" name="options[slug]" value="{{ replace .RelPermalink "/" "" }}">
+    <input type="hidden" name="options[parent]" value="">
+    <input name="options[redirect]" type="hidden" value="{{.Permalink}}#comment_ok">
+    <input name="options[redirectError]" type="hidden" value="{{.Permalink}}#comment_fail">
+  
+  
+    <!-- <fieldset> -->
+    <div class="txt_wrapper">
+      <textarea class="c_c" name="fields[comment]" placeholder="{{ i18n "commentText" }}"></textarea>
+    </div>
+    <!-- </fieldset> -->
+  
+    <!-- <fieldset> -->
+      <div class="txt_wrapper">
+        <input class="c_n" name="fields[name]" type="text" placeholder="{{ i18n "commentName" }}"/>
+      </div>
+    <!-- </fieldset> -->
+  
+    <!-- <fieldset> -->
+      <div class="txt_wrapper">
+        <input class="c_e" type="email" name="fields[email]"  placeholder="{{ i18n "commentEmail" }}"/>
+      </div>
+    <!-- </fieldset> -->
+  
+    <!-- <fieldset>
+      <div class="textfield">
+        <input type="url" name="fields[website]"  placeholder="yourWebsite"/>
+      </div>
+    </fieldset> -->
+  
+  
+    <!-- <fieldset> -->
+      <button class="submit_comment">
+        <strong>{{ i18n "commentSubmit" }}</strong>
+      </button>
+    <!-- </fieldset> -->
+  </form>
+  </section>
+<!--   
+  <article class="modal">
+    <div class="title">
+      <h2 class="js-modal-title"></h2>
+    </div>
+    <div class="js-modal-text"></div>
+    <div>
+      <button class="js-close-modal">Close</button>
+    </div>
+  </article> -->
+  

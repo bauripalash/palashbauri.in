@@ -1,0 +1,8 @@
+<span> {{ if not .Date.IsZero }} {{ i18n "publish_date_full" . }} {{end}} </span>
+&nbsp;·&nbsp;
+
+<span> {{ if not (.Param "NoReadTime") }} {{ i18n "read_time" .ReadingTime }} {{end}} </span>
+
+&nbsp;·&nbsp;
+
+<span> {{ i18n "word_count" . }} </span>

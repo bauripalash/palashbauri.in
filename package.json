@@ -1,0 +1,14 @@
+{
+  "name": "Blog_Of_Palash_Bauri",
+  "version": "0.0.1",
+  "description": "Just for optimization of hugo builds",
+  "main": "index.js",
+  "repository": "git@gitlab.com:bauripalash/xblog.git",
+  "author": "Palash Bauri <palashbauri1@gmail.com>",
+  "license": "(C) Palash Bauri; All rights reserved",
+  "private": true,
+  "dependencies": {
+    "postcss": "^8.3.7",
+    "postcss-cli": "^8.3.1"
+  }
+}

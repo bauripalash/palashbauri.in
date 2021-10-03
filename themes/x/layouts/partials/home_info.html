@@ -1,0 +1,14 @@
+{{- with $.Site.Params.homeInfoParams }}
+<article class="page_header">
+    <img class="page_header_avatar" alt="avatar" src="{{ $.Site.Params.homeInfoParams.avatar | relURL }}" />
+    <header class="page_header_title">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <section class="page_header_subtitle">
+        <div>{{ .Content | markdownify }}</div>
+
+
+    </section>
+    <div>{{ .subinfo | markdownify }}</div>
+</article>
+{{- end -}}

@@ -1,0 +1,148 @@
+baseURL: ""
+title: Adventure of Palash Bauri
+paginate: 5
+theme: x
+copyright: © Copyright Palash Bauri. All rights reserved
+timeZone: Asia/Kolkata
+
+permalinks:
+    posts: /:filename/
+
+enableGitInfo: true
+languageCode: en-us
+
+# enableInlineShortcodes: true
+enableRobotsTXT: true
+# buildDrafts: false
+# buildFuture: false
+# buildExpired: false
+# enableEmoji: true
+
+defaultContentLanguage: en
+language: en
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+  
+outputs:
+    home:
+        - HTML
+        - RSS
+    page:
+        - HTML
+        - JSON
+
+params:
+    env: development # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Ideas, criticism, thoughts of Palash Bauri"
+    author: Palash Bauri
+    twitter: 'bauripalash'
+    email: 'palashbauri1@gmail.com'
+    telegram: 'bauripalash'
+    mastodon: 'mastodon.social/@bauripalash'
+    github: 'bauripalash'
+    # author: ["Me", "You"] # multiple authors
+
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    # ShowBreadCrumbs: true
+    # ShowCodeCopyButtons: true
+    ShowToc: true
+    # comments: false
+    images: ["papermod-cover.png"]
+    staticman:
+        enable: true
+        endpoint: 'https://staticman-lyart.vercel.app/v3/entry'
+        provider: 'gitlab'
+        maxdepth: 2
+        username: 'bauripalash'
+        repository: 'blog'
+        branch: 'master'
+
+
+
+    homeInfoParams:
+        Avatar: /images/fox.webp
+        Title: "Palash Bauri 🦊"
+        Content: >
+            Talking Freely With The Cosmos 👋
+        subinfo: An kid writing about what he thinks about _things_
+
+    socialIcons:
+        - name: github
+        - name: RsS
+          url: "index.xml"
+
+    # editPost:
+    #     URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    #     Text: "Suggest Changes" # edit text
+    #     appendFilePath: true # to append file path to Edit link
+
+    # label:
+    #     text: "Home"
+    #     icon: icon.png
+    #     iconHeight: 35
+
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
+
+    # assets:
+    #     favicon: "<link / abs url>"
+    #     favicon16x16: "<link / abs url>"
+    #     favicon32x32: "<link / abs url>"
+    #     apple_touch_icon: "<link / abs url>"
+    #     safari_pinned_tab: "<link / abs url>"
+
+    # cover:
+    #     hidden: true # hide everywhere but not in structured data
+    #     hiddenInList: true # hide on list pages and home
+    #     hiddenInSingle: true # hide on single page
+
+    # fuseOpts:
+    #     isCaseSensitive: false
+    #     shouldSort: true
+    #     location: 0
+    #     distance: 1000
+    #     threshold: 0.4
+    #     minMatchCharLength: 0
+    #     keys: ["title", "permalink", "summary", "content"]
+
+taxonomies:
+    tag: tags
+
+# markup:
+#     goldmark:
+#         renderer:
+#             unsafe: false
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         # noClasses: false
+#         style: monokai
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    twitter:
+        disableInlineCSS: true

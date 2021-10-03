@@ -1,0 +1,13 @@
+
+<header class="header">
+    <nav class="navigation">
+        {{ if not .IsHome }}
+            <a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ i18n "home" }}</a>
+        {{ end }}
+        <a href="{{ "/archives" | relURL }}"> 🗃️ {{ i18n "archive" }}</a>
+        <!-- <a href="{{ "/tags" | relURL }}"> 🔖 {{ i18n "tags" }}</a> -->
+        <a href="{{ "/about" | relURL }}"> 🙋 {{ i18n "about" }}</a>
+    
+    
+    </nav>
+</header>

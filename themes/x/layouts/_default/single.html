@@ -1,0 +1,68 @@
+{{define "main" }}
+
+<article class="post-single h-entry">
+  <header class="post-header">
+    <h1 class="post-title p-name">
+      {{ .Title }}
+    </h1>
+    <p class="post_meta">
+      {{ if not .Date.IsZero }} 
+        <time class="dt-published" datetime='{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" | safeHTML}}'>{{ i18n "publish_date_full" . }}</time> 
+      {{end}}&nbsp;·&nbsp;
+      {{ if not (.Param "NoReadTime") }} {{ i18n "read_time" .ReadingTime }} {{end}}&nbsp;·&nbsp;
+      {{ i18n "word_count" . }}
+    </p>
+  </header>
+  {{ if (.Param "ShowToc") }}
+  {{ partial "toc.html" . }}
+  {{ end }}
+
+  {{ if .Content }}
+  <div class="post-content">
+    {{ partial "anchored_headings.html" .Content }}
+  </div>
+  {{ end }}
+  
+  <footer class="post-footer">
+    {{ if .Params.tags }}
+    <ul class="post-tags">
+      {{ range ($.GetTerms "tags") }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    {{ if not .Site.Params.noshowlastmod}}
+      {{ if not .Params.noshowlastmod }}
+        <hr/>
+        <p class="post_meta">
+          <time class="dt-updated" datetime='{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}'>{{ i18n "lastmod_date_full" . }}</time>
+        </p>
+      {{end}}
+    {{end}}
+    {{ if not .Site.Params.noshare}}
+      {{if not .Params.noshare}}
+        {{ partial "share_icons.html" . }}
+      {{ end }}
+    {{end}}
+    <hr>
+    {{ if not .Site.Params.nopostnav }}
+      {{ if not .Params.nopostnav }}
+        {{ partial "post_nav_links.html" . }}
+      {{end}}
+    {{ end }}
+
+  </footer>
+  {{ if not .Site.Params.nocommentcomment}}
+    {{if not .Params.nocomment}}
+      {{ if .IsPage }}
+        <div id="comment_area">
+          {{ partial "sman/coms" .}}
+        </div>
+      {{end}}
+    {{end}}
+  {{end}}
+  
+</article>
+
+{{ end }}{{/* end main */}}
