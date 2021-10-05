@@ -1,0 +1,93 @@
+==================================================================
+
+https://keybase.io/bauripalash
+
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://palashbauri.in
+
+  * I am bauripalash (https://keybase.io/bauripalash) on keybase.
+
+  * I have a public key ASDWc75_G8B9YTI4yvbTngdSjT0WRDMlaNYaGohSNAaopwo
+
+To do so, I am signing this object:
+
+{
+
+  "body": {
+
+    "key": {
+
+      "eldest_kid": "01204a1facdd0678b2f3f3ab85ed60a67d2e5ebbe2fe87c4e030af6fbf3152d7ff4c0a",
+
+      "host": "keybase.io",
+
+      "kid": "0120d673be7f1bc07d613238caf6d39e07528d3d1644332568d61a1a88523406a8a70a",
+
+      "uid": "9ea7fc9f5edbe8a56ea13cf701b0d919",
+
+      "username": "bauripalash"
+
+    },
+
+    "merkle_root": {
+
+      "ctime": 1574067744,
+
+      "hash": "29bea23312ca06abf9ef2ca0a45c5b4c87fb1d77d577f80f00416848276916c368df0e3a58e98b335f24beec69121f780142b82a8b39ed53e0a9f7236340b981",
+
+      "hash_meta": "f731941a583dad15dc7cf31e4fb87ac56317a538340449f82ff46156f9a12973",
+
+      "seqno": 10039643
+
+    },
+
+    "service": {
+
+      "entropy": "R3XZtMtx2hwdzcBF7XpvAwQd",
+
+      "hostname": "palashbauri.in",
+
+      "protocol": "https:"
+
+    },
+
+    "type": "web_service_binding",
+
+    "version": 2
+
+  },
+
+  "client": {
+
+    "name": "keybase.io go client",
+
+    "version": "5.0.0"
+
+  },
+
+  "ctime": 1574067753,
+
+  "expire_in": 504576000,
+
+  "prev": "b4e8b4c5ffd81308a1f41702f7dccd6d9c1184332269c3e2dfef1de20f101dc9",
+
+  "seqno": 50,
+
+  "tag": "signature"
+
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1nO+fxvAfWEyOMr2054HUo09FkQzJWjWGhqIUjQGqKcKp3BheWxvYWTESpcCMsQgtOi0xf/YEwih9BcC99zNbZwRhDMiacPi3+8d4g8QHcnEIGGaJF9D2YZylbB6uUC4Y43EKX9EM1+EqBXqtpIiu8Z4AgHCo3NpZ8RA+8usm1tdU18a/RoRpthxIhPd2dSaRyUrgevxlxr7k8qr9A6GcZ4hkqGyVbvV/v/n1rvMXLZgkJFoho3mr2PKDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPoihRgjKRi1KHiCFSCFmEysfeL7XRBKAlfbkXTBcr7ko3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bauripalash
+
+==================================================================
