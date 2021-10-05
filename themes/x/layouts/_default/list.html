@@ -48,15 +48,15 @@
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 
-<article class="{{ $class }}">
+<article class="{{ $class }}"> 
   {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-  <header class="entry-header">
+  <header class="entry-header" {{ with .Params.lang }} lang="{{ . }}" {{end}}>
     <h2>
       {{- .Title }}
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
     </h2>
   </header>
-  <section class="entry-content">
+  <section class="entry-content"  {{ with .Params.lang }} lang="{{ . }}" {{end}}>
     <p>{{ .Summary | plainify |}}</p>
   </section>
   <footer class="entry-footer">
