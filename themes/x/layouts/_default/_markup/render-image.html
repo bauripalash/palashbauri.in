@@ -1,1 +1,5 @@
-<img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}" {{ end }} />
+{{ $ximage := resources.Get .Destination  }}
+
+{{ with $ximage }}
+    <img loading="lazy" src="{{ .RelPermalink }}" alt="{{ $.Text }}" {{with $.Title}} title="{{.}}" {{end}} />
+{{end}}
