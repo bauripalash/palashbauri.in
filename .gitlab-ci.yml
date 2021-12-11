@@ -1,4 +1,4 @@
-image: klakegg/hugo:0.88.0-ext-ubuntu-ci
+image: klakegg/hugo:0.90.1-ext-ubuntu-ci
 
 variables:
     BASEURL: "https://palashbauri.in/"
