@@ -4,7 +4,9 @@ date: 2022-01-06T10:49:10+05:30
 draft: false
 ---
 
-Society has given was what? 
+Society has given us what? 
+
+![](https://c.tenor.com/eXEEh6D6OowAAAAC/madoka-madoka-magica.gif)
 
 We take pride of our intelligence, we are supposed to be the smartest on the planet. But still we can't stand each other. Almost every species on this planet have at least one natural predator, except humans , and because of that we are a thriving species, the "best"! What a joke.
 
@@ -15,7 +17,3 @@ Some people think, God is watching over us, and "He" has the solution to all thi
 I think the root cause of all of this is that, we have lost our humanity. we have become something like a parasite to this planet. Infecting the planet with disease we call "development". Now, we want more, we are hunting down new planets to colonize in the universe. We had this beautiful home, called Earth. Now, that we have put her in the brink of destruction, we are looking for another home.
 
 > A simple big old rock. It can be anything we want it to be, we can create something beautiful out by carving it or we can use it as a weapon to harm.
-
-
-
-
