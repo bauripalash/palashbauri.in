@@ -4,7 +4,9 @@ date: 2022-01-06T10:49:10+05:30
 draft: false
 ---
 
-Society has given was what? 
+Society has given us what? 
+
+![](https://c.tenor.com/eXEEh6D6OowAAAAC/madoka-madoka-magica.gif)
 
 We take pride of our intelligence, we are supposed to be the smartest on the planet. But still we can't stand each other. Almost every species on this planet have at least one natural predator, except humans , and because of that we are a thriving species, the "best"! What a joke.
 
