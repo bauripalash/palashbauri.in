@@ -1,0 +1,38 @@
+---
+label: Blog
+hide_body: true
+fields:
+- type: field_group
+  name: cascade
+  label: cascade
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: author
+    label: author
+  - type: text
+    name: title
+    label: title
+  - type: datetime
+    name: date
+    label: date
+  - type: text
+    name: description
+    label: description
+  - type: image_gallery
+    name: images
+    label: images
+  - type: list
+    name: tags
+    label: tags
+  - type: boolean
+    name: draft
+    label: draft
+  - type: boolean
+    name: noshare
+    label: noshare
+  - type: list
+    name: kws
+    label: kws
