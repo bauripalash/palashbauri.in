@@ -2,37 +2,65 @@
 label: Blog
 hide_body: true
 fields:
-- type: field_group
-  name: cascade
-  label: cascade
-  fields:
-  - type: file
-    name: image
-    label: image
-  - type: text
-    name: author
-    label: author
-  - type: text
-    name: title
-    label: title
-  - type: datetime
-    name: date
-    label: date
-  - type: text
-    name: description
-    label: description
-  - type: image_gallery
-    name: images
-    label: images
-  - type: list
-    name: tags
-    label: tags
-  - type: boolean
-    name: draft
-    label: draft
-  - type: boolean
-    name: noshare
-    label: noshare
-  - type: list
-    name: kws
-    label: kws
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Title of the Post
+  default: Yet another post
+- name: date
+  type: datetime
+  label: Date
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  description: Publish Date
+  default: now
+- name: description
+  type: textarea
+  default: A ARTICLE WITH SHARES PALASH BAURI'S IDEA, OPINION AND RESEARCH
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Description of the post
+- name: images
+  type: tag_list
+  default:
+  - post-cover.png
+  label: images
+- name: tags
+  type: tag_list
+  default:
+  - general
+  label: Tags
+  description: Tags/Categories
+- name: draft
+  type: boolean
+  label: Is Draft
+  description: Is this post a Draft?
+  default: true
+- name: noshare
+  type: boolean
+  label: Can't Share
+  description: Is Share Disabled?
+- name: kws
+  type: tag_list
+  default:
+  - Commentary
+  - Politics
+  - World
+  - Technology
+  - Philosophy
+  label: Google Keywords
+- name: noshowlastmod
+  type: boolean
+  label: Don't Show Last Mod
+- name: nocomment
+  type: boolean
+  label: NoComment
