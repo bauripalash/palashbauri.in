@@ -4,6 +4,10 @@ url: "/about"
 nocomment: true
 noshare: true
 noshowlastmod: true
+image: 'post-cover.png'
+images:
+    - post-cover.png
+
 
 ---
 ### Hi, I am Palash Bauri,
