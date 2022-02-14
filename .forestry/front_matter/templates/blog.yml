@@ -64,3 +64,5 @@ fields:
 - name: nocomment
   type: boolean
   label: NoComment
+pages:
+- content/posts/grow-up.md
