@@ -17,6 +17,8 @@ There's a saying that, women are the worst enemy for women themselves. If you ha
 
 When a girl is unmarried, she's someone's daughter, she knows what it means to be the parent of a girl, everyone is asking when is the daughter getting married, why isn't she marrying blah blah blah. Though dowry is illegal in India, unfortunately in rural areas even in a few urban areas, it's still in practice, you'll probably be shocked to know that know if the grooms' family doesn't want or ask for dowry, the family of the bride will still want the groom to have some "dowry", and somehow they may not even mention the word "dowry" instead they'll say something like, we want our daughter to have these, or it's for our daughter. I think it's okay to give your daughter jewelry or something like that for their marriage because jewelry is solely for use of the bride, in our country jewelry is something must-have for women. But a motorbike? A fridge? I don't understand these.
 
+![](https://c.tenor.com/KxX_ZCmPCB8AAAAM/spongebob-i-dont-know.gif)
+
 I know, I might sound like a radical modernist, but if you think a little, you'll understand what I meant.
 
 Dowry hasn't been abolished, it just mutated to a more modern approach. We call ourselves modern but still haven't been able to forget our cruel outdated conservatism. "Modern", what a joke!
@@ -28,6 +30,8 @@ These middle-class families are the worst, they act and dress like rich but thei
 In these middle-class families, women are one step ahead. The adjectives they use to their would-be daughter-in-law are straight-up disrespectful and sometimes even vulgar. I don't understand, how a woman who once was in that same position can be so insensitive.
 
 I'm frustrated, frustrated about the psychopathic lunacy of our so-called modern society.
+
+![](https://c.tenor.com/l4YnLVq_H5sAAAAM/travis-fran-healy.gif)
 
 We have all these laws and rights, but at the grassroots of our society, these are just ignoble paragraphs on some piece of paper.
 
