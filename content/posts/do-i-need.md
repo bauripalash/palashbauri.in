@@ -1,14 +1,13 @@
 +++
 date = 2022-02-15T05:59:09Z
 description = "There's a clear distinction between need and want but we can't always see it thus making a slave to our own dreams and greed."
-draft = true
 images = ["post-cover.png"]
 kws = ["Psychology", "Emotion", "Society"]
 nocomment = false
 noshare = false
 noshowlastmod = false
 tags = ["psychology ", "society"]
-title = "Do I need?"
+title = "Do I actually need?"
 
 +++
 You get an infinite number of wishes — 
