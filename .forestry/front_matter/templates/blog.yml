@@ -65,4 +65,5 @@ fields:
   type: boolean
   label: NoComment
 pages:
+- content/posts/do-i-need.md
 - content/posts/grow-up.md
