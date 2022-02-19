@@ -3,6 +3,7 @@ date = 2022-02-15T05:59:09Z
 description = "There's a clear distinction between need and want but we can't always see it thus making a slave to our own dreams and greed."
 images = ["post-cover.png"]
 kws = ["Psychology", "Emotion", "Society"]
+lastmod = 2022-02-18T18:30:00Z
 nocomment = false
 noshare = false
 noshowlastmod = false
@@ -56,10 +57,3 @@ don't ever touch.
 Prism of dreams,
 Hope it,
 Don't ever do.
-
-
-
-
-
-
-
