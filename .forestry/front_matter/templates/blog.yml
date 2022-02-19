@@ -64,6 +64,16 @@ fields:
 - name: nocomment
   type: boolean
   label: NoComment
+- name: lastmod
+  type: datetime
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: Modified on
+  default: now
 pages:
 - content/posts/do-i-need.md
 - content/posts/grow-up.md
