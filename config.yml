@@ -8,7 +8,7 @@ timeZone: Asia/Kolkata
 permalinks:
     posts: /:filename/
 
-enableGitInfo: false
+enableGitInfo: true
 languageCode: en-us
 
 # enableInlineShortcodes: true
@@ -149,7 +149,6 @@ services:
 frontmatter:
   lastmod:
   - lastmod
-  - :fileModTime
   - :git
   - :default
 
