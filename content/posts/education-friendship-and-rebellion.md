@@ -1,7 +1,6 @@
 +++
 date = 2022-02-20T04:55:50Z
 description = "Education is supposed to help us to be better people but the system has taken over it and mutated it into a psychopathic rat race, turning friends into rivals."
-draft = true
 images = ["post-cover.png"]
 kws = ["Society", "Education", "Childhood", "Friendship"]
 lastmod = 2022-02-20T04:55:50Z
