@@ -1,7 +1,6 @@
 +++
 date = 2022-02-21T04:18:35Z
 description = "A language is just a way of communication but somehow people made it a status symbol. Walk like a duck, quack like a duck and become a duck. "
-draft = true
 images = ["post-cover.png"]
 kws = ["india", "struggle", "india", "language", "mother-tongue"]
 lastmod = 2022-02-21T04:18:35Z
