@@ -1,7 +1,6 @@
 +++
 date = 2022-02-28T04:59:55Z
 description = "Nobody wants a war, but it is still happening."
-draft = true
 images = ["post-cover.png"]
 kws = ["Commentary", "Politics", "World", "Society", "Ukraine", "Russia", "War", "NATO", "USA", "America"]
 lastmod = 2022-02-28T04:59:55Z
