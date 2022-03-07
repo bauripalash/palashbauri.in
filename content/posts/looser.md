@@ -1,7 +1,6 @@
 +++
 date = 2022-03-07T04:07:18Z
 description = "Friends are important but sometimes with time we loose them; as well as everything"
-draft = true
 images = ["post-cover.png"]
 kws = ["Friendship", "Society", "Education", "Time", "School"]
 lastmod = 2022-03-07T04:07:18Z
