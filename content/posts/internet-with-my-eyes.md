@@ -55,7 +55,7 @@ I see the web as this peaceful forest once it was. Where every animal lived peac
     - Exchange rate of \$USD -> ₹INR, was $1=₹45.5768;
     - Price of petrol in ₹INR (in capital of India, Delhi) was ₹65.64 per liter (1st December, 2011)]
 
-[^1]: Back then you had recharge a different pack for calling; and there was no such thing as Unlimited call; you got charged for every second you were on call.
+[^1]: Back then you had to recharge a different pack for calling; and there was no such thing as Unlimited call; you got charged for every second you were on call.
 
 [^2]: Well, I know, whatapp is just a messaging app but it now has turned into a micro-social-media, since the introduction of 'Status' feature
 
