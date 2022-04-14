@@ -1,7 +1,6 @@
 +++
 date = 2022-04-14T08:30:00Z
 description = "Last Wednesday's experience with practice teaching elementary students"
-draft = true
 images = ["post-cover.png"]
 kws = ["Education", "Status", "Update", "Elementary", "School"]
 lastmod = 2022-04-14T08:30:00Z
