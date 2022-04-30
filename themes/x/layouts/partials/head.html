@@ -18,6 +18,10 @@
 {{- $stylesheet := $mainstyle | resources.PostCSS (dict "noMap" true) | resources.Minify}}
 <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
 
+
+<link rel="webmention" href="https://webmention.io/palashbauri.in/webmention" />
+<link rel="pingback" href="https://webmention.io/palashbauri.in/xmlrpc" />
+
 <!-- IndieWeb Identity -->
 
 {{ with .Site.Params.Email }}<link rel="me" href="mailto:{{ . }}">{{ end }}
