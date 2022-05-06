@@ -49,6 +49,7 @@
 {{- end }}
 
 <article class="{{ $class }}"> 
+  <a class="" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">
   {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
   <header class="entry-header" {{ with .Params.lang }} lang="{{ . }}" {{end}}>
     <h2>
@@ -62,7 +63,7 @@
   <footer class="entry-footer">
     {{- partial "post_meta.html" . -}}
   </footer>
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</a>
 </article>
 {{- end }}
 
