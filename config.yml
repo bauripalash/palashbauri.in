@@ -11,6 +11,7 @@ permalinks:
 enableGitInfo: true
 languageCode: en-us
 
+
 # enableInlineShortcodes: true
 enableRobotsTXT: true
 # buildDrafts: false
@@ -32,6 +33,19 @@ outputs:
         - RSS
     page:
         - HTML
+    taxanomy:
+        - HTML
+        - RSS
+
+author:
+    name: "Palash Bauri"
+    email: "palashbauri1@gmail.com"
+    
+
+outputFormats:
+  RSS:
+    mediatype: application/rss
+    baseName: feed
 
 params:
     env: development # to enable google analytics, opengraph, twitter-cards and schema.

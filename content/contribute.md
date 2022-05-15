@@ -5,6 +5,7 @@ nocomment: true
 noshare: true
 noshowlastmod: true
 nodonation: true
+norss: true
 image: post-cover.png
 images:
 - post-cover.png

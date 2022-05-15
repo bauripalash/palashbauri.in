@@ -7,6 +7,7 @@ nocomment: true
 noshare: true
 noshowlastmod: true
 nowordcount: true
+norss: true
 image: post-cover.png
 images:
 - post-cover.png
