@@ -10,17 +10,20 @@
     <p class="post_meta">
       {{ if not .Date.IsZero }} 
         <time class="dt-published" datetime='{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" | safeHTML}}'>{{ i18n "publish_date_full" . }}</time> 
-      {{end}}&nbsp;·&nbsp;
-      {{ if not (.Param "NoReadTime") }} {{ i18n "read_time" .ReadingTime }} {{end}}&nbsp;·&nbsp;
+    &nbsp;·&nbsp;
+      {{end}}
+      {{ if not (.Param "noreadtime") }} {{ i18n "read_time" .ReadingTime }} &nbsp;·&nbsp;{{end}}
+      {{ if not (.Param "nowordcount") }}
       {{ i18n "word_count" . }}
+      {{end}}
     </p>
   </header>
-  {{ if (.Param "ShowToc") }}
+  {{ if (.Param "showtoc") }}
   {{ partial "toc.html" . }}
   {{ end }}
 
   {{ if .Content }}
-  <div class="post-content">
+  <div class="post-content e-content">
     {{ partial "anchored_headings.html" .Content }}
   </div>
   {{ end }}
@@ -55,7 +58,7 @@
     {{ end }}
 
   </footer>
-  {{ if not .Site.Params.nocommentcomment}}
+  {{ if not .Site.Params.nocomment}}
     {{if not .Params.nocomment}}
       {{ if .IsPage }}
         <div id="comment_area">
@@ -64,6 +67,17 @@
       {{end}}
     {{end}}
   {{end}}
+
+    {{ if not .Site.Params.nodonation}}
+    {{if not .Params.nodonation}}
+      {{ if .IsPage }}
+        <div class="d_area" id="donation">
+            <p>Liked this article or any other work of mine? Please consider <a class="d_link" id="donation_link" href="/contribute">Buying me a Cup of Coffee</a></p>
+        </div>
+      {{end}}
+    {{end}}
+  {{end}}
+
   
 </article>
 

@@ -1,5 +1,54 @@
 {{ $ximage := resources.Get .Destination  }}
-
 {{ with $ximage }}
-    <img loading="lazy" src="{{ .RelPermalink }}" alt="{{ $.Text }}" {{with $.Title}} title="{{.}}" {{end}} />
+    <img loading="lazy" src="{{ .RelPermalink }}" alt="{{ $.Text }}" 
+
+    {{with $.Title}} 
+     {{$xsize := split . "x"}}
+     {{ if eq (len $xsize) 2 }}
+     
+     width="{{ index $xsize 0 }}" 
+     {{ if (index $xsize 1) }}
+     height="{{ index $xsize 1 }}"
+     {{ end }}
+
+     {{end}}
+
+
+     {{ if eq (len $xsize) 1 }}
+     
+     width="{{ index $xsize 0 }}" 
+
+     {{end}}
+
+
+    {{end}} />
+{{ else }}
+
+<img loading="lazy"
+src="{{.Destination}}" 
+alt="{{.Text}}"
+
+{{with .Title}}
+     
+     {{$xsize := split . "x"}}
+     {{ if eq (len $xsize) 2 }}
+     
+     width="{{ index $xsize 0 }}" 
+     {{ if (index $xsize 1) }}
+     height="{{ index $xsize 1 }}"
+     {{ end }}
+
+     {{end}}
+
+
+     {{ if eq (len $xsize) 1 }}
+     
+     width="{{ index $xsize 0 }}" 
+
+     {{end}}
+
+
+{{end}}/>
+
+
 {{end}}

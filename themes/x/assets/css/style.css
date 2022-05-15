@@ -995,16 +995,29 @@ h6:hover .anchor {
 #comment_area {
     margin: auto;
     border: 2px solid #e7effc;
-    background: #fafcff;
+    background: #c3e8f7;
     border-radius: 0;
     padding: 10px 7px;
     margin-top: 36px;
     border-radius: 8px;
 }
 
-#comment_area .com_count {
-    font-size: 15px;
+#donation{
+    margin: auto;
+    border: 2px solid #e7effc;
+    background: #c3f7c3;
+    border-radius: 0;
+    padding: 10px 7px;
+    margin-top: 36px;
+    border-radius: 8px;
 }
+
+.d_link{
+    text-decoration: underline;
+    color:darkblue;
+
+}
+
 
 .txt_wrapper {
     margin: 5px 0;
