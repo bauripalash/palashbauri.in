@@ -5,15 +5,14 @@
     {{ partial "head.html" . }}
 </head>
 
-<body class="
-{{ if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
-{{ print "list" }}
-{{ end }}" id="top">
+<body class="{{ if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}{{- print "list" -}}{{ end }}" id="top">
     {{ partialCached "header.html" . .Page }}
     <main class="main">
         {{ block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") }}
 </body>
+
+     <script src="/js/main.js"></script> 
 
 </html>
