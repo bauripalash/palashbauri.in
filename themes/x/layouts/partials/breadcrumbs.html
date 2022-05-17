@@ -1,4 +1,4 @@
-{{- if (.Param "ShowBreadCrumbs") -}}
+{{- if (.Param "showbread") -}}
 <div class="breadcrumbs">
     {{- $url := replace .Parent.Permalink (printf "%s" .Site.BaseURL) "" }}
     {{- $lang_url := strings.TrimPrefix (printf "%s/" .Lang) $url -}}

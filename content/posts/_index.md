@@ -2,9 +2,9 @@
 cascade:
     image: 'images/typewriter.jpg'
     author: "Palash Bauri"
-    title: "Yet another post"
+    title: "Posts"
     date: "2021-01-01"
-    description: "A ARTICLE WITH SHARES PALASH BAURI'S IDEA, OPINION AND RESEARCH"
+    description: "Article(s) written by Palash Bauri"
     images:
         - post-cover.png
     tags:
