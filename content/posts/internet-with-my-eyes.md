@@ -4,8 +4,10 @@ description = "Journey to the internet; Internet is broken, but I think the inte
 images = ["post-cover.png"]
 kws = ["World", "Technology", "internet", "world-wide-web", "social media"]
 lastmod = 2022-03-08T13:12:06Z
+showtoc = true
 nocomment = false
 noshare = false
+showbread = true
 noshowlastmod = false
 tags = ["internet", "tech"]
 title = "Internet with my eyes!"
@@ -36,6 +38,8 @@ Now, years later, everything seems labyrinthine. People say web/internet is brok
 The situation is worst than people anticipate! If I tell people that I have a website and I write 'blogs'; they can find it at `palashbauri.in`. Most of them don't even know what the hell is a website; those who do, most of them don't know how to type a URL in the browser. Few of them surprisingly asked me, if they would find `it` in the Play Store.
 
 Look, I understand, everyone doesn't know these things, but what about the teens who are always sticking their face to their screen? They doesn't even know (or want to know) that there are things other than social media on web.
+
+### Final Thoughts
 
 Internet was supposed to expand the horizon; but social-media made it shrank even more. Social media is a part of the Web, but it is silently replacing the web.
 
