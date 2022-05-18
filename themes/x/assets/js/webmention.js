@@ -291,7 +291,7 @@ A more detailed example:
    * @returns string
    */
   function formatComments(comments) {
-    const headline = `<h2>${t('Responses')}</h2>`;
+    const headline = `<h2>💬 ${t('Responses')}</h2>`;
     const markup = comments
       .map((c) => {
         //const image = reactImage(c, true);
@@ -314,7 +314,7 @@ A more detailed example:
 
         const type = `<span class="${linkclass}">${linktext}</span>`;
 
-          return `<li><span class="alink"> 🙋${link}</span> -> ${type}</li>`;
+          return `<div><p class="alink"> 🙋${link}</p> <p class="comment_text">${type}</p></div>`;
       })
     .join('');
     return `
@@ -342,7 +342,7 @@ A more detailed example:
    * @param {Array<Reaction>} reacts List of reactions to format
    * @returns string
    */
-/*
+
   function formatReactions(reacts) {
     const headline = `<h2>${t('Reactions')}</h2>`;
 
@@ -353,7 +353,7 @@ A more detailed example:
       <ul class="reacts">${markup}</ul>
     `;
   }
-  */
+
 
   /**
    * @typedef WebmentionResponse
@@ -417,11 +417,13 @@ A more detailed example:
     /** @type {Record<MentionType, Array<Reaction>>} */
     const mapping = {
       "in-reply-to": comments,
+      "like-of": collects,
+      "repost-of": collects,
+      "bookmark-of": collects,
+      "follow-of": collects,
       "mention-of": comments,
       "rsvp": comments
-    };
-
-    json.children.forEach(function(child) {
+    }; json.children.forEach(function(child) {
       // Map each mention into its respective container
       const store = mapping[child['wm-property']];
       if (store) {
@@ -436,13 +438,14 @@ A more detailed example:
     }
 
     // format the other reactions
-    /*
+    
     let reactions = '';
     if (collects.length > 0) {
-      reactions = formatReactions(dedupe(collects));
+      //reactions = formatReactions(dedupe(collects));
+        reactions = `<p class="rcs"> This post has about <strong>${dedupe(collects).length}+ 💥reactions </strong> </p><hr/>`
     }
-    */
+    
 
-    container.innerHTML = `${formattedComments}`;
+        container.innerHTML = `${reactions}<br>${formattedComments}`;
     }});
   }());

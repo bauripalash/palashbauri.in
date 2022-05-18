@@ -16,9 +16,9 @@
     {{ $mainjs_source := resources.Get $js_path }}
     {{ $mainjs := $mainjs_source | resources.ExecuteAsTemplate $js_path . }}
      <script>{{ $mainjs.Content | safeJS }}</script> 
-     {{ if (and (eq .Kind `page`) (eq .Section "posts") ) }}
+     {{ if (and (eq .Kind `page`) (eq .Section "posts") (ne .Page.Params.nocomment "true") ) }}
      {{ $wm_js := resources.Get "js/webmention.js" | resources.Minify }}
-     <script src="{{- $wm_js.RelPermalink -}}" data-page-url="{{ .Page.Permalink }}" data-prevent-spoofing="true" async></script>
+     <script src="{{- $wm_js.RelPermalink -}}" data-page-url="{{ .Page.Permalink }}" data-prevent-spoofing="true" data-wordcount=30 async></script>
      {{end}}
 
 
