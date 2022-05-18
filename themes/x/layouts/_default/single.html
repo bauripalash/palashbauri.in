@@ -62,7 +62,12 @@
     {{if not .Params.nocomment}}
       {{ if .IsPage }}
         <div id="comment_area">
+            
             <p>Have any comments regarding this post 🤔? Please let me know via Email, Tweet/DM or Toot 😺!</p>
+            <details id="showwm">
+            <summary id="wm_button">+webmentions</summary> 
+            <div id="webmentions">Loading...</div>    
+            </details>
         </div>
       {{end}}
     {{end}}

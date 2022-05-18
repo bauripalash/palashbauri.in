@@ -16,5 +16,10 @@
     {{ $mainjs_source := resources.Get $js_path }}
     {{ $mainjs := $mainjs_source | resources.ExecuteAsTemplate $js_path . }}
      <script>{{ $mainjs.Content | safeJS }}</script> 
+     {{ if (and (eq .Kind `page`) (eq .Section "posts") ) }}
+     {{ $wm_js := resources.Get "js/webmention.js" | resources.Minify }}
+     <script src="{{- $wm_js.RelPermalink -}}" data-page-url="{{ .Page.Permalink }}" data-prevent-spoofing="true" async></script>
+     {{end}}
+
 
 </html>
