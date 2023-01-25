@@ -1,0 +1,85 @@
+{{define "main"}}
+
+<article class="post">
+<!--Title-->
+<h1 class="title">{{.Title}}</h1>
+
+<div class="post-info">
+<!--Date-->
+{{ if not .Params.NoDate }} {{ i18n "post_date" . }} {{end}} {{ if not .Params.Nowordcount }} | {{ i18n "word_count" . }} {{end}} {{ if not .Params.Noreadtime }}   | {{ i18n "read_time" .ReadingTime }} {{end}}
+
+
+</div>
+
+<!--TOC-->
+
+{{ if .Params.ShowToc }}
+{{ with .TableOfContents }}
+{{ if ne . "<nav id=\"TableOfContents\"></nav>" }}
+<details class="toc-container">
+	<summary> {{ i18n "toc" }} </summary>
+<div class="toc-content">
+{{.}}
+</div>
+</details>
+{{end}}
+{{ end  }}
+{{ end }}
+
+<!--Content-->
+{{.Content}}
+
+<!--Tag-->
+<div class="tags">
+	{{range (.GetTerms "tags")}}
+	<span><a href="{{.RelPermalink}}">{{.LinkTitle}}</a></span>
+	{{end}}
+</div>
+
+<div class="post-linfo">{{ if not .Params.Noshowlastmod }} {{ i18n "lastmod_date_full" . }} | {{end}} <a href="{{.Permalink}}">{{ i18n "permalink" }}</a></div>
+</article>
+
+{{ if not .Params.Noshare }}
+
+{{ partial "extras/share.html" . }}
+
+
+{{end}}
+
+{{ if not .Params.Nocomment }}
+ 
+<div class="comment">
+	{{ i18n "comment" }}
+</div>
+
+{{end}}
+
+<!--Prev/Next-->
+{{ if not .Params.Nonextprev }}
+<div class="np-nav">
+	<div class="prev-post">{{with .Prev}}<a href="{{.RelPermalink}}">{{.Title}}</a> <div class="indicator">👈</div> {{end}}</div> 
+	<div class="next-post">{{with .Next}}<a href="{{.RelPermalink}}">{{.Title}}</a> <div class="indicator">👉</div> {{end}}</div>
+</div>
+
+{{end}}
+
+
+
+{{ partial "extras/askdonate.html" . }}
+
+<!--Related-->
+{{ if not .Params.Norelated }} 
+{{$related := .Site.RegularPages.Related . | first 5}}
+{{with $related}}
+<h3>{{ i18n "read_more" }}</h3>
+<ul>
+	{{range .}}
+	<li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
+	{{end}}
+</ul>
+{{end}}
+
+{{end}}
+<hr/>
+
+{{end}}

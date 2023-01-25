@@ -1,0 +1,18 @@
+<footer>
+
+<div class="social">
+	 <span>|</span>
+	{{ range $.Site.Menus.footer }}
+	<a class="symbol" href="{{ .URL }}" rel="noreferrer" target="_blank"><span>[ {{ i18n .Identifier }}] </span></a> <span>|</span>
+	{{ end }}
+
+    <br>
+	<div>
+		{{ partial "extras/email.html" }}
+	</div>
+</div>
+
+<div class="copyright">
+{{with .Site.Params.Copyright_notice}}{{. | safeHTML }}{{end}}
+</div>
+</footer>

@@ -1,0 +1,85 @@
+---
+label: Blog
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Title of the Post
+  default: Yet another post
+- name: date
+  type: datetime
+  label: Date
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  description: Publish Date
+  default: now
+- name: description
+  type: textarea
+  default: A ARTICLE WITH SHARES PALASH BAURI'S IDEA, OPINION AND RESEARCH
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Description of the post
+- name: images
+  type: tag_list
+  default:
+  - post-cover.png
+  label: images
+- name: tags
+  type: tag_list
+  default:
+  - general
+  label: Tags
+  description: Tags/Categories
+- name: draft
+  type: boolean
+  label: Is Draft
+  description: Is this post a Draft?
+  default: true
+- name: noshare
+  type: boolean
+  label: Can't Share
+  description: Is Share Disabled?
+- name: kws
+  type: tag_list
+  default:
+  - Commentary
+  - Politics
+  - World
+  - Technology
+  - Philosophy
+  label: Google Keywords
+- name: noshowlastmod
+  type: boolean
+  label: Don't Show Last Mod
+- name: nocomment
+  type: boolean
+  label: NoComment
+- name: lastmod
+  type: datetime
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: Modified on
+  default: now
+pages:
+- content/posts/do-i-need.md
+- content/posts/education-friendship-and-rebellion.md
+- content/posts/grow-up.md
+- content/posts/internet-with-my-eyes.md
+- content/posts/language-struggle-and-disappointment.md
+- content/posts/looser.md
+- content/posts/status-update-1.md
+- content/posts/war-of-whatnot.md

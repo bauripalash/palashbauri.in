@@ -1,0 +1,13 @@
+
+
+{{ if .IsNamedParams }}
+  <div class="{{ if .Get "class" }}{{ .Get "class" }}{{ else }}mastodon-embed{{ end }}">
+    <iframe src="{{ .Get "id" }}/embed" style="max-width: 100%; border: 0" width="100%" height="250" allowfullscreen="allowfullscreen"></iframe>
+<script src="https://static-cdn.mastodon.social/embed.js" async="async"></script>
+  </div>
+{{ else }}
+  <div class="{{ if len .Params | eq 2 }}{{ .Get 1 }}{{ else }}mastodon-embed{{ end }}">
+    <iframe src="{{ .Get 0 }}/embed" style="max-width: 100%; border: 0" width="100%" height="250" allowfullscreen="allowfullscreen"></iframe>
+<script src="https://static-cdn.mastodon.social/embed.js" async="async"></script>
+  </div>
+{{ end }}

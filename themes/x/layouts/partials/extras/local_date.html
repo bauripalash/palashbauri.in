@@ -1,0 +1,8 @@
+{{ if eq "bn" .language.Lang }}
+
+{{ index .days_bn ( printf "%d" .date.Weekday ) }}, {{ .date.Day }} {{ index .months_bn ( printf "%d" .date.Month ) }} {{.date.Year}}
+{{else}}
+
+{{ .date.Format "January 2, 2006" }}
+
+{{ end }}

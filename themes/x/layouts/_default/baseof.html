@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{$.Site.Language}}">
+{{- partial "head.html" . -}}
+
+<body>
+	{{- partial "header.html" . -}}
+	<div id="content">
+		{{- block "main" . }}{{- end }}
+	</div>
+	{{- partial "footer.html" . -}}
+</body>
+	
+	{{- partial "extras/mermaid.html" . -}}
+
+	{{ if $.Site.Params.Enablegoat }}
+	<script data-goatcounter="https://aopalash.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+	{{end}}
+
+</html>

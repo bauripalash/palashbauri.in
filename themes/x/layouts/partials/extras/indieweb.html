@@ -1,0 +1,5 @@
+{{ with .Site.Params.Email }}<link rel="me" href="mailto:{{ . }}">{{ end }}
+{{ with .Site.Params.Github }}<link rel="me" href="https://github.com/{{ . }}">{{ end }}
+{{ with .Site.Params.Twitter }}<link rel="me" href="https://twitter.com/{{ . }}">{{ end }}
+{{ with .Site.Params.Mastodon }}<link rel="me" href="{{ . }}">{{ end }}
+{{ with .Site.Params.Telegram }}<link rel="me" href="https://t.me/{{ . }}">{{ end }}

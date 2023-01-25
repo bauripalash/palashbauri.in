@@ -1,0 +1,57 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{{ $style := resources.Get "css/style.css" | minify | fingerprint }}
+	<link rel="stylesheet" href="{{$style.Permalink}}" integrity="{{ $style.Data.Integrity }}">
+	
+	{{if eq $.Site.Language.Lang "en"}}
+	<style> 
+		html{
+			
+  			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		}
+	</style>
+	{{ else if ( eq $.Site.Language.Lang "bn" ) }}
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;700&display=fallback" rel="stylesheet">
+	
+<style>
+	html{
+		font-family: "Noto Serif Bengali", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+	}
+</style>
+
+	{{end}}
+
+
+
+<title>{{ if .IsHome }}  {{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="author" content="{{ .Site.Params.Author }}">
+
+{{ partial "extras/indieweb.html" .}}
+
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/schema.html" . }}
+
+{{ partial "jsonld.html" . }}
+
+ {{ if .OutputFormats.Get "RSS" }}
+  {{ with .OutputFormats.Get "RSS" }}
+    <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  {{ end }}
+{{ end }}      
+
+
+
+{{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+</head>
+
+

@@ -1,0 +1,187 @@
+baseURL = "https://palashbauri.in"
+title = "Adventure of Palash Bauri"
+paginate = 5
+theme = "x"
+copyright = "© Copyright Palash Bauri"
+timezone = "Asia/Kolkata"
+enableGitInfo = true
+languageCode = "en-us"
+enableRobotsTXT = true
+enableEmoji = true
+defaultContentLanguage = "en"
+language = "en"
+
+[permalinks]
+	posts = "/:filename/"
+
+[sitemap]
+	changefreq = "monthly"
+	filename = "sitemap.xml"
+	priority = 0.5
+
+[languages]
+	[languages.en]
+	languageName = "English"
+	contentDir = "content/english"
+	weight = 1
+
+	[[languages.en.menu.main]]
+		identifier = "home"
+		title = "Home"
+		url = "/"
+		weight = 1
+	[[languages.en.menu.main]]
+		identifier = "about"
+		title = "Who?"
+		url = "/about"
+		weight = 2
+	[[languages.en.menu.main]]
+		identifier = "lang"
+		title = "Bengali"
+		url = "/bn/"
+		weight = 4
+
+	[[languages.en.menu.main]]
+		identifier = "archive"
+		title = "archive"
+		url = "/archives"
+		weight = 3
+
+	[[languages.en.menu.footer]]
+		identifier = "twitter_footer"
+		url = "https://twitter.com/bauripalash"
+		weight = 1
+	[[languages.en.menu.footer]]
+		identifier = "mastodon_footer"
+		url = "https://fosstodon.org/@bauripalash"
+		weight = 2
+	[[languages.en.menu.footer]]
+		identifier = "feed"
+		url = "/feed.xml"
+		weight = 3
+	[languages.bn]
+		languageName = "Bengali"
+		weight = 2
+		title = "পলাশের অভিযান"
+		contentDir = "content/bengali"
+	[[languages.bn.menu.main]]
+		identifier = "home"
+		title = "GHOR"
+		url = "/bn/"
+		weight = 1
+	[[languages.bn.menu.main]]
+		identifier = "about"
+		title = "Ke?"
+		url = "/bn/about"
+		weight = 2
+	[[languages.bn.menu.main]]
+		identifier = "lang"
+		title = "English"
+		url = "/"
+		weight = 4
+	[[languages.bn.menu.main]]
+		identifier = "archive"
+		title = "archive"
+		url = "/bn/archives"
+		weight = 3
+	[[languages.bn.menu.footer]]
+		identifier = "twitter_footer"
+		url = "https://twitter.com/bauripalash"
+		weight = 1
+	[[languages.bn.menu.footer]]
+		identifier = "mastodon_footer"
+		url = "https://fosstodon.org/@bauripalash"
+		weight = 2
+	[[languages.bn.menu.footer]]
+		identifier = "feed"
+		url = "/bn/feed.xml"
+		weight = 3
+
+[outputs]
+	home = [ "HTML", "RSS" ]
+	page = [ "HTML" ]
+	taxanomy = [ "HTML", "RSS" ]
+
+[author]
+	name = "Palash Bauri"
+	email = "palashbauri1@gmail.com"
+
+[outputFormats]
+	[outputFormats.RSS]
+		mediatype = "application/rss+xml"
+		baseName = "feed"
+
+[markup]
+	[markup.highlight]
+		style = "igor"
+		lineNos = false
+	[markup.goldmark.renderer]
+		unsafe = true
+
+[params]
+	env = "development"
+	enablegoat = true
+	mermaid = true
+	description = "Ideas, criticism, thoughts of Palash Bauri"
+	author = "Palash Bauri"
+	mainSections = "posts"
+	twitter = "bauripalash"
+	email = "palashbauri1@gmail.com"
+	telegram = "bauripalash"
+	mastodon = "fosstodon.org/@bauripalash"
+	github = "bauripalash"
+	facebook = "bauripalash"
+	ShowShareButtons = true
+	ShowReadingTime = true
+	displayFullLangName = true
+	ShowPostNavLinks = true
+	ShowToc = true
+	images = [ "papermod-cover.png" ]
+	copyright_notice = "© Copyright <a class='h-card' rel='me' href='https://palashbauri.in'>Palash Bauri</a>. All rights reserved"
+	[params.authorDetails]
+		fullName = "Palash Bauri"
+		socialHandle = "bauripalash"
+		firstName = "Palash"
+		lastName = "Bauri"
+		countryName = "India"
+
+	[params.homeInfoParams]
+		Avatar = "/images/fox.webp"
+		Title = "palash bauri"
+		xContent = """
+	...
+	"""
+	  subinfo = "An kid writing about what he thinks about _things_"
+
+	[[params.socialIcons]]
+	name = "github"
+
+	  [[params.socialIcons]]
+	  name = "RsS"
+	  url = "index.xml"
+
+[taxonomies]
+	tag = "tags"
+
+[privacy.vimeo]
+	disabled = false
+	simple = true
+
+[privacy.twitter]
+	disabled = false
+	enableDNT = true
+	simple = true
+
+[privacy.youtube]
+	disabled = false
+	privacyEnhanced = true
+
+[services.twitter]
+	disableInlineCSS = true
+
+[frontmatter]
+	lastmod = [ "lastmod", ":git", ":default" ]
+
+[build]
+	writeStats = true
+

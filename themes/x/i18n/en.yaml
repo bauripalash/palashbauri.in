@@ -1,0 +1,93 @@
+- id: prev_page
+  translation: "Previous"
+
+- id: lang
+  translation: "বাংলা"
+
+- id: next_page
+  translation: "Next"
+
+- id: latest_writings
+  translation: "Latest Writings"
+
+- id: read_time
+  translation:
+    one : "1 Minute"
+    other: "{{ .Count }} Minutes"
+
+- id: twitter
+  translation: "twitter"
+
+- id: facebook
+  translation: "facebook"
+
+- id: mastodon
+  translation: "mastodon"
+
+- id: whatsapp
+  translation: "whatsapp"
+
+- id: email
+  translation: "e-mail"
+
+- id: toc
+  translation: "Table of Contents"
+
+- id: translations
+  translation: "Translation"
+
+- id: home
+  translation: "🏠 Home"
+
+
+- id: word_count
+  translation: "{{ .WordCount }} words"
+
+- id: post_date
+  translation: "{{ .Date.Format \"Mon, January 2, 2006\" }}"
+
+- id: post_info_date
+  translation: "{{ .Date.Format \"January 2, 2006\" }}"
+
+
+- id: publish_date_full
+  translation: '{{ .PublishDate.Day }} {{.PublishDate.Month }} {{ .PublishDate.Year }}'
+
+- id: archive
+  translation: "📚 Archive"
+
+- id: about
+  translation: "🙋 Who?"
+
+- id: tags
+  translation: "Tags"
+
+- id: share_msg
+  translation: "Share with the universe"
+
+- id: commentRequest
+  translation: "If you liked (or disliked) my writings or found mistakes, Please do comment 🥺"
+
+- id: comment
+  translation: "Have any comments regarding this post 🤔? Please let me know via Email (mentioned below), Tweet/DM or Toot @bauripalash 😺!"
+
+- id: read_more
+  translation: "Read more"
+
+- id: donate
+  translation: "Liked this article or any other work of mine? Please consider <a href=\"/contribute\">Buying me a Cup of Coffee</a>"
+
+- id: permalink
+  translation: "📎 permalink"
+
+- id: lastmod_date_full
+  translation: "✏️ Last edited: {{ .Lastmod.Format \"Mon, January 2, 2006\" }}"
+
+- id: twitter_footer
+  translation: "🐦 twitter"
+
+- id: mastodon_footer
+  translation: "🐘 mastodon"
+
+- id: feed
+  translation: "🗞️ feed"

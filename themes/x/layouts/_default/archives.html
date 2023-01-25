@@ -1,0 +1,25 @@
+{{ define "main" }}
+<header>
+	<h1>{{ i18n "archive" }}</h1>
+	{{ if .Description }}
+	<div>{{ .Description }}</div>
+	{{ end }}
+</header>
+
+{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections  }}
+
+{{ if .Site.Params.ShowAllPagesInArchive }}
+ {{ $pages = site.RegularPages }}
+{{end}}
+
+{{ range $pages.GroupByPublishDate "2006" }}
+	<h3>{{ .Key }}</h3>
+ {{ range .Pages.GroupByDate "January" }}
+ 	<h4>{{ .Key }}</h4>
+ 	{{ range .Pages }}
+	<p><a href="{{ .Permalink }}">{{ .Title }} </a> : {{ i18n "post_info_date" . }}</p>
+	{{end}}
+ {{end}}
+{{ end }}
+
+{{ end }}

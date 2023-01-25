@@ -1,0 +1,97 @@
+- id: prev_page
+  translation: "আগের পাতা"
+
+- id: lang
+  translation: "English"
+
+- id: next_page
+  translation: "পরের পাতা"
+
+- id: latest_writings
+  translation: "সাম্প্রতিক লেখাসমূহ"
+
+- id: twitter
+  translation: "টুইটার"
+
+- id: facebook
+  translation: "ফেসবুক"
+
+- id: read_more
+  translation: "আরও পড়ুন"
+
+- id: mastodon
+  translation: "মাস্টোডন"
+
+- id: whatsapp
+  translation: "হোয়াটস্‌অ্যাপ"
+
+- id: email
+  translation: "ইমেল"
+
+- id: read_time
+  translation:
+    one : "১ মিনিট"
+    other: "{{ .Count }} মিনিট"
+
+- id: toc
+  translation: "সূচিপত্র"
+
+- id: translations
+  translation: "Translation"
+
+- id: home
+  translation: "🏠 প্রথম"
+
+- id: edit_post
+  translation: "Suggest change"
+
+- id: code_copy
+  translation: "Copy"
+
+- id: code_copied
+  translation: "Copied!"
+
+- id: word_count
+  translation: "{{ .WordCount }}টি শব্দ"
+
+- id: post_date
+  translation: "{{ index $.Site.Data.days_bn ( printf \"%d\" .Date.Weekday ) }}, {{ .Date.Day }} {{ index $.Site.Data.months_bn ( printf \"%d\" .Date.Month ) }} {{ .Date.Year}}"
+
+- id: post_info_date
+  translation: "{{ index $.Site.Data.months_bn ( printf \"%d\" .Date.Month ) }} {{ .Date.Day }}, {{ .Date.Year}}"
+
+- id: publish_date_full
+  translation: '{{ .PublishDate.Day }} {{.PublishDate.Month }} {{ .PublishDate.Year }}'
+
+- id: donate
+  translation: "আমার লেখাগুলো বা অন্যকোনো কাজ ভালো লাগছে? তাহলে <a href=\"/bn/contribute\">এক কাপ চা খাওয়ান</a>"
+
+- id: archive
+  translation: "📚 মহাফেজখানা"
+
+- id: about
+  translation: "🙋 আমি কে?"
+
+- id: tags
+  translation: "Tags"
+
+- id: share_msg
+  translation: "বিশ্বের সাথে ভাগ করুন"
+
+- id: comment
+  translation: "এক লেখাটি সম্পর্কে কোনো মতামত আছে 🤔? তাহলে আমাকে ইমেল পাঠান (নীচে দেওয়া আছে) কিংবা টুইটারে বা ফেসবুকে আমাকে @bauripalash মেনশন করে পোস্ট করুন 😺!"
+
+- id: lastmod_date_full
+  translation: "✏️ শেষ সম্পাদনাঃ {{ index $.Site.Data.days_bn ( printf \"%d\" .Lastmod.Weekday ) }}, {{ .Lastmod.Day }} {{ index $.Site.Data.months_bn ( printf \"%d\" .Lastmod.Month ) }} {{ .Lastmod.Year}}"
+
+- id: permalink
+  translation: "📎 লিঙ্ক"
+
+- id: twitter_footer
+  translation: "🐦 টুইটার"
+
+- id: mastodon_footer
+  translation: "🐘 মাস্টোডন"
+
+- id: feed
+  translation: "🗞️ ফিড"

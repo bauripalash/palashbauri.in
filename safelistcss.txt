@@ -1,0 +1,5 @@
+.comments
+.alink
+.comment_text
+.text
+.rcs

@@ -1,0 +1,58 @@
+{{define "main"}}
+
+
+
+
+
+<!--$paginator-->
+{{$p := .Pages}}
+{{if .IsHome}}
+{{$p = where site.RegularPages "Type" "in" site.Params.mainSections}}
+{{else if eq .Kind "taxonomy"}}
+{{$p = $p.ByTitle}}
+{{end}}
+{{$paginator := .Paginate $p}}
+
+{{ if and .IsHome (eq $paginator.PageNumber 1 ) }}
+<div class="home-info">
+{{.Content}}
+</div>
+<br/>
+<h3>{{ i18n "latest_writings" }}: </h3>
+{{ end }}
+<!--list-->
+	{{range $paginator.Pages}}
+
+	<a class="postcard-envelope" href="{{.RelPermalink}}">
+		<div class="postcard">
+			<h2 class="postcard-title">{{ .Title }}</h2>
+			<div class="postcard-summary">
+				{{ .Summary | truncate 180  }}				
+			</div>
+			<div class="postcard-info">
+				{{ i18n "post_info_date" . }} | {{ i18n "word_count" . }} | {{ i18n "read_time" .ReadingTime }}
+			</div>
+		</div>
+	</a>
+
+	
+
+	{{end}}
+
+<!--pagination-->
+
+{{ if gt $paginator.TotalPages 1 }}
+	<div class="pagination">
+		<nav>
+			{{ if $paginator.HasPrev }}
+			<a class="page-prev" href="{{ $paginator.Prev.URL }}">{{ i18n "prev_page" }}</a>
+			{{ end }}
+
+			{{ if $paginator.HasNext }}
+			<a class="page-next" href="{{ $paginator.Next.URL }}">{{ i18n "next_page" }}</a>
+			{{ end }}
+		</nav>
+	</div>
+{{ end }}
+
+{{end}}

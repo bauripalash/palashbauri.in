@@ -1,0 +1,17 @@
+image: klakegg/hugo:0.90.1-ext-ubuntu-ci
+
+variables:
+    BASEURL: "https://palashbauri.in/"
+
+
+pages:
+    stage: deploy
+    script:
+    - git submodule update --init
+    - npm install
+    - hugo --baseURL ${BASEURL}
+    artifacts:
+        paths:
+        - public
+    only:
+        - main

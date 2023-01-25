@@ -1,0 +1,10 @@
+{{ if .Page.Params.Needmermaid }}
+	{{ if .Page.Store.Get "hasMermaid" }}
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@9.2.2/dist/mermaid.min.js"></script>
+		<script>
+			mermaid.initialize({ startOnLoad: true });
+		</script>
+	{{ end }}
+{{ end }}
+
+

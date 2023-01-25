@@ -1,0 +1,10 @@
+<!--Site Title-->
+<!--<a href="{{ "" | relLangURL}}">{{site.Title}}</a>-->
+<!--Sub-title-->
+
+<nav class="head-nav">
+	
+	{{ range $.Site.Menus.main }}
+	<a href="{{ .URL }}">{{ i18n .Identifier }}</a>
+	{{ end }}
+</nav>
