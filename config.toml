@@ -122,6 +122,7 @@ language = "en"
 	env = "development"
 	enablegoat = true
 	mermaid = true
+	math = true
 	description = "Ideas, criticism, thoughts of Palash Bauri"
 	author = "Palash Bauri"
 	mainSections = "posts"
