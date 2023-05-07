@@ -1,4 +1,4 @@
-![](/images/fox.webp)
+![](/images/palash.webp)
 #### Hi :wave: I am Palash Bauri
 
 <div class="myinfo">

@@ -20,7 +20,7 @@ images:
 
 I am a 20-year-old, kid, who loves to build open source software and write about what I think, about philosophy, human psychology, science, technology and many more bla bla bla.
 
-![](/images/palash.jpg?#round)
+![](/images/palash_irl.webp?#round)
 
 Besides that, I am student, I'm currently pursuing Bachelor degree on English Literature.
 

@@ -24,6 +24,8 @@
 	}
 </style>
 
+
+
 	{{end}}
 
 
@@ -51,6 +53,15 @@
 {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ absURL "/images/icons/apple-touch-icon.png?v=20230507" }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ absURL "/favicon-32x32.png?v=20230507" }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ absURL "/favicon-16x16.png?v=20230507" }}">
+<link rel="manifest" href="{{ absURL "/site.webmanifest?v=20230507" }}">
+<link rel="mask-icon" href="{{ absURL "/images/icons/safari-pinned-tab.svg?v=20230507" }}" color="#5bbad5">
+<link rel="shortcut icon" href="{{ absURL "/favicon.ico?v=20230507" }}">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
 </head>
 

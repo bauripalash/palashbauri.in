@@ -14,6 +14,6 @@ images:
 ---
 ### Hi 👋, আমি পলাশ বাউরি
 
-![](/images/palash.jpg?#round)
+![](/images/palash_irl.webp?#round)
 
 
