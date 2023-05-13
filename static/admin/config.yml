@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+search: false
+slug:
+  encoding: "ascii"
+  clean_accents: true 
+  sanitize_replacement: "-"
+
+collections:
+  - name: "enblog"
+    label: "E_Blog"
+    folder: "content/english/posts"
+    create: true
+    slug: "{{filename}}"
+    fields:
+      - {label: "Title" , name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Date" , name: "date", widget: "date", format: "YYYY-MM-DD"}
+      - {label: "Description", name: "description" , widget: "string"}
+      - {label: "Images", name: "images" , widget: "list"}
+      - {label: "GNews Kws" , name: "kws" , widget: "list"}
+      - {label: "Tags" , name: "tags" , widget: "list"}
+      - {label: "Last Mod", name: "lastmod", widget: "date", format: "YYYY-MM-DD" }
+      - {label: "TOC", name: "showtoc", widget: "boolean", default: true}
+      - {label: "NoComment", name: "nocomment", widget: "boolean", default: false}
+      - {label: "NoShare", name: "noshare", widget: "boolean", default: false}
+      - {label: "NoShowLastMod", name: "noshowlastmod", widget: "boolean", default: false}
+  - name: "bnblog"
+    label: "BN_Blog"
+    folder: "content/bengali/posts"
+    create: true
+    slug: "{{filename}}"
+    fields:
+      - {label: "Title" , name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Date" , name: "date", widget: "date", format: "YYYY-MM-DD"}
+      - {label: "Description", name: "description" , widget: "string"}
+      - {label: "Images", name: "images" , widget: "list"}
+      - {label: "GNews Kws" , name: "kws" , widget: "list"}
+      - {label: "Tags" , name: "tags" , widget: "list"}
+      - {label: "Last Mod", name: "lastmod", widget: "date", format: "YYYY-MM-DD" }
+      - {label: "TOC", name: "showtoc", widget: "boolean", default: true}
+      - {label: "NoComment", name: "nocomment", widget: "boolean", default: false}
+      - {label: "NoShare", name: "noshare", widget: "boolean", default: false}
+      - {label: "NoShowLastMod", name: "noshowlastmod", widget: "boolean", default: false}
