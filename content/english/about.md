@@ -1,7 +1,7 @@
 ---
-title: Who the Hell I am?
+title: Who am I?
 url: "/about"
-showtoc: true
+showtoc: false
 noreadtime: true
 nocomment: true
 noshare: true
@@ -16,37 +16,31 @@ images:
 - post-cover.png
 
 ---
-### Hi, I am Palash Bauri,
+**Hi, I am Palash Bauri.**
 
-I am a 20-year-old, kid, who loves to build open source software and write about what I think, about philosophy, human psychology, science, technology and many more bla bla bla.
+I am 21 years old 'kid' pursuing a Bachelor's of English Degree from Netaji
+Subhas Open University, India.
 
 ![](/images/palash_irl.webp?#round)
 
-Besides that, I am student, I'm currently pursuing Bachelor degree on English Literature.
 
-If you would like to have a chat with me, feel free to drop me an email, or maybe if you want you can text me on telegram at `bauripalash`. my electronic mail address is given below.
+Since I was 11–12 years old, I have been writing computer programs. I create
+programs that can be useful, fun, or totally silly. You can find most of my
+open source programs at [github/bauripalash](https://github.com/bauripalash).
 
----
-My open source projects :
+From the age of 12-13, I have been writing stories, poems, and essays in both
+English and Bengali language (my mother tongue). Many of my short stories and
+essays in Bengali have been published in a few renowned Bengali magazines such
+as *Kishore Bharati*, *Jnan o Bijnaan* and many more.
 
-[ OSS by Palash](https://bauripalash.github.io)
+I have also published a book `আকাশগল্প` (ISBN: *978-93-91776-10-7*) (English : `Aakashgolpo`;
+Trans: Tale of Sky), which is a collection of essays written in Bengali.
 
----
+If you would like to know me better, or just chat, you can reach me in multiple
+ways, you can drop me an *email* (address mentioned in footer), If you use
+Twitter, you can DM me at `@bauripalash`. If you use telegram, you can text me
+at `@bauripalash`. As you can see most of my usernames on the internet are just
+`bauripalash`. Feel free to reach me, I would like to talk, I maybe be late
+but I always reply.
 
-### Some blogs I  read  
-(At random order)
 
-* [Recent content on acha.ninja](https://acha.ninja/)
-* [computers are bad](https://computer.rip/)
-* [The personal blog of Dave Rupert, web developer and podcaster from Austin, TX.](https://daverupert.com/)
-* [Drew DeVault's blog](https://drewdevault.com/)
-* [Kev Quirk](https://kevq.uk/)
-* [Mozilla Hacks - the Web developer blog](https://hacks.mozilla.org/)
-* [Pointers Gone Wild](https://pointersgonewild.com/)
-* [Susam's Blog](https://susam.net/blog/feed.xml)
-* [Software and such](https://tacaswell.github.io/)
-* [The personal website of designer Bradley Taunt](https://tdarb.org/)
-* [Recent content on, Technical Sourcery](https://www.technicalsourcery.net/)
-* [The weird world of cyber, hax, privacy and Internet subcultures with a slice of retro.](https://thedorkweb.substack.com/)
-* [Xe's Blog](https://xeiaso.net/blog)
-* [daringfireball.net By John Gruber](https://daringfireball.net/)
