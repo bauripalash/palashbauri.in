@@ -3,7 +3,7 @@ date = 2023-05-29
 description = "using zig as build system for Pankti Programming Language a Bengali programming language which runs on Windows, Mac, Linux, Android, and Web."
 images = ["https://b.og.palashbauri.in/api/og?date=2023-05-29T04%3A23%3A45.381Z&title=Zig%20as%20build%20system%20for%20Cpank&gh=bauripalash&blog=Adventure%20of%20Palash%20Bauri"]
 kws = ["programming", "c" ,"zig", "windows", "programming-language", "bengali", "cross-compile"]
-lastmod = 2023-05-29
+lastmod = 2023-06-03
 showtoc = true
 nocomment = false
 noshare = false
@@ -31,6 +31,17 @@ A few weeks ago, I was prototyping a turtle graphics system with [Raylib](https:
 Building the GUI variant become as easy as building the core since commit [d70137d](https://github.com/bauripalash/pankti/commit/d70137df395f5b7040be3973b860a9df7720badb), I have been using zig as my default build system. On Windows complicated build system became child's play. The conditional steps I mentioned above got covered within a few lines of code. The best thing about Zig's build system is that it includes a full-fledged Clang compiler inside it, thus building on Windows got a lot easier as we no longer need setup a complicated C setup, I believe in future potential contributors of cpank will appreciate the current setup
 
 When in my last [devlog #6](https://palashbauri.in/devlog-pankti-6/) I said about using zig, I didn't think I would use it so soon. Take a look at the current state of my `build.zig`[^3], it might help you should you decide to use zig as you build system.,
+
+### Update: Jun 3, 2023
+Well, Zig is creating a mess on Windows. Unfortunately, My tests were passing, and I thought "It's alive", but the celebration was very premature.
+
+The basic fundamental functionality of cpank is not working if compiled with zig cc on Windows, the executable is unable to parse pankti scripts written in Bengali.
+
+But interestingly enough, when I dug deeper into the Zig source code, I found out that the problem is not with Zig cc but with the clang itself. I discussed it with Zig folks, but the problem has nothing to do with Zig. 
+
+The core cli tool is not that much of a problem, it can be easily built with gcc or msvc but I'm struggling with GUI.
+
+Huh ..... I am tired as well as frustrated.
 
 ---
 
