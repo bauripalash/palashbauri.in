@@ -88,9 +88,20 @@
       "toc-content"
     ],
     "ids": [
+      "1-a-program-must-do-its-job-correctly",
+      "2-the-source-code-of-the-program-must-be-simple-to-understand-no-matter-the-language-used",
+      "3-the-source-code-should-be-modular",
+      "4-the-code-should-be-cross-platform",
+      "5-the-code-must-be-well-commented",
+      "6-the-programmer-must-write-notes",
+      "7-the-program-should-be-well-optimized",
+      "8-avoid-sharp-characters",
       "TableOfContents",
       "another-update",
+      "beginning",
+      "c-unicode-on-windows",
       "content",
+      "depreciation",
       "devlog---pankti",
       "final-thoughts",
       "fn:1",
@@ -104,19 +115,21 @@
       "hi-",
       "hi--i-am-palash-bauri",
       "hi--আম-পলশ-বউর",
-      "hi-i-am-palash-bauri",
       "i-want-freedom",
       "india",
+      "license-change",
       "little-extra",
       "masto_share",
       "new-gpg-public-key-of-gmail-email-account",
       "note-taking",
       "pankti-programming-language",
       "personal-updates",
+      "rust",
       "see-you-soon",
-      "some-blogs-i--read-",
+      "update-jun-3-2023",
       "দশহন--মতয",
-      "পরয়-বনধগণ--আম-পলশ-বউর"
+      "পরয়-বনধগণ--আম-পলশ-বউর",
+      "সখর-দন"
     ]
   }
 }
