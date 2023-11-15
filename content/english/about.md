@@ -16,6 +16,8 @@ images:
 - post-cover.png
 
 ---
+## About Me
+
 **Hi, I am Palash Bauri.**
 
 I am 21 years old 'kid' pursuing a Bachelor's of English Degree from Netaji
@@ -43,4 +45,8 @@ at `@bauripalash`. As you can see most of my usernames on the internet are just
 `bauripalash`. Feel free to reach me, I would like to talk, I maybe be late
 but I always reply.
 
+
+## Important Pages
+
+#### 😵‍💫 [IWatched](https://palashbauri.in/iwatched/) : My Person Rating of Movies, Dramas, Animes I have watched.
 
