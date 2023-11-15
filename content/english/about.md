@@ -23,7 +23,7 @@ images:
 I am 21 years old 'kid' pursuing a Bachelor's of English Degree from Netaji
 Subhas Open University, India.
 
-![](/images/palash_irl.webp?#round)
+![](/images/palash_irl2.webp?#round)
 
 
 Since I was 11–12 years old, I have been writing computer programs. I create
