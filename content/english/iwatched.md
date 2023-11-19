@@ -1,3 +1,25 @@
++++
+date = 2023-11-01
+description = "iWatched"
+images = ["https://b.og.palashbauri.in/api/og?gh=bauripalash&title=I%20Watched!&blog=Adventure%20of%20Palash%20Bauri&date=2023-11-01T03%3A27%3A06.740Z"]
+lastmod = 2023-11-19
+nocomment = true
+noshare = true
+showbread = false
+noshowlastmod = true
+url: "/iwatched"
+showtoc: false
+noreadtime: true
+noshowlastmod: true
+nowordcount: true
+nonextprev: true
+nodate: true
+norss: true
+norelated: true
+tags = ["multimedia", "miscellaneous"]
+title = "I Watched!"
++++
+
 # I watched! 📺
 ##### Rating according to me of the Movies, Series and other media stuff
 ___
