@@ -6,7 +6,6 @@ lastmod = 2023-11-19
 nocomment = true
 noshare = true
 showbread = false
-noshowlastmod = true
 url = "/iwatched"
 showtoc = false
 noreadtime = true
