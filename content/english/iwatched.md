@@ -7,15 +7,15 @@ nocomment = true
 noshare = true
 showbread = false
 noshowlastmod = true
-url: "/iwatched"
-showtoc: false
-noreadtime: true
-noshowlastmod: true
-nowordcount: true
-nonextprev: true
-nodate: true
-norss: true
-norelated: true
+url = "/iwatched"
+showtoc = false
+noreadtime = true
+noshowlastmod r true
+nowordcount = true
+nonextprev = true
+nodate = true
+norss = true
+norelated = true
 tags = ["multimedia", "miscellaneous"]
 title = "I Watched!"
 +++
