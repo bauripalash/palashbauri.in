@@ -5,7 +5,13 @@ ___
 * Attack on Titan = 9/10
 * Spy x Family (cont) = 8/10
 * The Millionaire Detective = 6/10
+* The Devil is a Part-Timer! = 6.5/10
+* Jujutsu Kaisen (cont) = 8/10
+* Demon Slayer: Kimetsu no Yaiba = 7.5/10
+* Naruto (2002) (cont) = 8/10
 
+> 'cont' means either I haven't finished watching the show or 
+the show has not finished airing yet.
   
 ## Movies
 * 👻 Ghostbusters Afterlife (2021) = 7/10
