@@ -10,7 +10,7 @@ noshowlastmod = true
 url = "/iwatched"
 showtoc = false
 noreadtime = true
-noshowlastmod r true
+noshowlastmod = true
 nowordcount = true
 nonextprev = true
 nodate = true
