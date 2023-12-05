@@ -16,7 +16,7 @@
     other: "{{ .Count }} Minutes"
 
 - id: twitter
-  translation: "twitter"
+  translation: "𝕏 (twitter)"
 
 - id: facebook
   translation: "facebook"
@@ -84,7 +84,7 @@
   translation: "✏️ Last edited: {{ .Lastmod.Format \"Mon, January 2, 2006\" }}"
 
 - id: twitter_footer
-  translation: "🐦 twitter"
+  translation: "𝕏 twitter"
 
 - id: mastodon_footer
   translation: "🐘 mastodon"
