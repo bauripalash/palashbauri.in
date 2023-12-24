@@ -2,7 +2,7 @@
 date = 2023-11-01
 description = "iWatched"
 images = ["https://b.og.palashbauri.in/api/og?gh=bauripalash&title=I%20Watched!&blog=Adventure%20of%20Palash%20Bauri&date=2023-11-01T03%3A27%3A06.740Z"]
-lastmod = 2023-11-19
+lastmod = 2023-12-24
 nocomment = true
 noshare = true
 showbread = false
