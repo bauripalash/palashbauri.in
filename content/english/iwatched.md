@@ -30,6 +30,8 @@ ___
 * Jujutsu Kaisen (cont) = 8/10
 * Demon Slayer: Kimetsu no Yaiba = 7.5/10
 * Naruto (2002) (cont) = 8/10
+* The Eminence in Shadow (cont) = 6.5/10
+* The Aristocrat's Otherworldly Adventure: Serving Gods Who Go Too Far = 5/10
 
 > 'cont' means either I haven't finished watching the show or 
 the show has not finished airing yet.
