@@ -51,13 +51,15 @@ My favorite books include, in English, 1984 by George Orwell, The War of the Wor
 
 Now, my favourite comics include Watchmen by Alan Moore, The Sandman by Neil Gaiman, Marvel 1602 by Andy Kubert, Batman: Year One by Frank Miller and David Mazzucchelli etc. 
 
-Favorite mangas include Fullmetal Alchemist by Hiromu Arakawa, Spy × Family by Tatsuya Endo, Attack on Titan by Hajime Isayama etc.
+Favorite mangas include Fullmetal Alchemist by Hiromu Arakawa, Spy × Family by Tatsuya Endo, Attack on Titan by Hajime Isayama ReLIFE by Yayoi Sou, Black Clover by Tabata Yuuki, Sentai Daishikkaku by Haruba Negi, Hinamatsuri by Ohtake Masao, Gokushufudou by Oono Kousuke, GTO: Great Teacher Onizuka by Fujisawa Tohru etc.
 
-I haven't read alot of Manhwas yet, but I liked reading Death's Game by Lee Wonsik, Ggulchan, Omniscient Reader , Written by sing N song & Illustrated by Sleepy-C (currently reading)
+I have read quite alot of Manhwas, here are some favorites The Greatest Estate Developer, A Returner's Magic Should Be Special  The Return of the Disaster-Class Hero, The Academy's Undercover Professor, Cleric of Decay, Flawed Almighty, Omniscient Reader, Noblesse etc
+
+Here are some manhua that I like, I'm Really Not the Devil's Lackey, The Devil Butler, Way to Be the Evil Emperor,My Wife Is a Demon Queen, B Is for Boss, etc.
 
 ## Contact Me
 
-If you would like to know me better, or just chat, you can reach me in multiple ways, you can drop me an email (address mentioned in footer), If you use 𝕏 (formerly Twitter), you can DM me at `@bauripalash`. If you use telegram, you can text me at `@bauripalash`. As you can see most of my usernames on the internet are just bauripalash. Feel free to reach me, I would like to talk, I maybe be late but I always reply.
+If you would like to know me better, or just chat, you can reach me in multiple ways, you can drop me an email (address mentioned in footer), If you use 𝕏 (formerly Twitter), you can DM me at `@bauripalash`. If you use telegram, you can text me at `@bauripalash`. As you can see most of my usernames on the internet are just bauripalash. Feel free to reach me, I always like to talk, I maybe be late but I always reply.
 
 And if wanna send email, keep the subject simple and short, just simple "Hi" , "Hello" are more than enough, otherwise I may accidentally miss them.
 
