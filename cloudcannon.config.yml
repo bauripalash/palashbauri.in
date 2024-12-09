@@ -1,0 +1,48 @@
+collections_config:
+  pages:
+    path: ''
+    name: Pages
+    icon: wysiwyg
+  content_bengali:
+    path: content/bengali
+    name: Content Bengali
+    icon: comment_bank
+  content_english:
+    path: content/english
+    name: Content English
+    icon: contactless
+  themes_x_i18n:
+    path: themes/x/i18n
+    name: Themes X I18n
+    icon: celebration
+  themes_x_data:
+    path: themes/x/data
+    name: Themes X Data
+    icon: h_mobiledata
+    disable_url: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+paths:
+  static: static
+  uploads: static/uploads
+timezone: Asia/Kolkata
+markdown:
+  engine: commonmark
+  options:
+    gfm: true
+    linkify: false
+    table: false
+    strikethrough: false
+    subscript: false
+    superscript: false
+    heading_ids: false
+    breaks: false
+    xhtml: false
+    attributes: false
+    typographer: false
+    treat_indentation_as_code: true
+_snippets_imports:
+  hugo:
+    exclude:
+      - hugo_instagram
