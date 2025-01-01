@@ -39,7 +39,7 @@ So.. my readers, I hope this year becomes a happy and peaceful time for you folk
 
 Ah, I forgot to mention, I am planning to get married this year.
 
-![](https://media.tenor.com/bkA2JqxxfGwAAAAi/mlbb-jjk-jjk-mlbb.gif)
+![_](https://media.tenor.com/bkA2JqxxfGwAAAAi/mlbb-jjk-jjk-mlbb.gif)
 
 Signing off,  
 Palash Bauri.  
