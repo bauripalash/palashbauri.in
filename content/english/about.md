@@ -19,7 +19,7 @@ Hi 👋, I am Palash Bauri
 
 I am 22 year old *kid* from West Bengal, India, pursuing Bachelor's of English from Netaji Subhas Open University. 
 
-![](/images/palash_irl2.webp?#round)
+![](/images/palash_irl.webp?#round)
 
 ## Interests
 

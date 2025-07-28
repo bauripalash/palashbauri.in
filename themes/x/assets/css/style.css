@@ -22,6 +22,11 @@
   
 }
 
+@font-face {
+	font-family: ThickPixels;
+	src: url(/ThickPixels.ttf);
+}
+
 html {
   line-height: 1.5;
   font-size: 20px;
@@ -37,6 +42,13 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+.thick-pixels{
+	font-family: ThickPixels;
+	color: #333c57;
+	font-size: 48px;
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 0.9em;

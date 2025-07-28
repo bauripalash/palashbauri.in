@@ -52,8 +52,8 @@ language = "en"
 		url = "https://twitter.com/bauripalash"
 		weight = 1
 	[[languages.en.menu.footer]]
-		identifier = "mastodon_footer"
-		url = "https://fosstodon.org/@bauripalash"
+		identifier = "bluesky_footer"
+		url = "https://bsky.app/profile/palashbauri.in"
 		weight = 2
 	[[languages.en.menu.footer]]
 		identifier = "feed"
@@ -89,8 +89,8 @@ language = "en"
 		url = "https://twitter.com/bauripalash"
 		weight = 1
 	[[languages.bn.menu.footer]]
-		identifier = "mastodon_footer"
-		url = "https://fosstodon.org/@bauripalash"
+		identifier = "bluesky_footer"
+		url = "https://bsky.app/profile/palashbauri.in"
 		weight = 2
 	[[languages.bn.menu.footer]]
 		identifier = "feed"

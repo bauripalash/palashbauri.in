@@ -91,3 +91,6 @@
 
 - id: feed
   translation: "🗞️ feed"
+
+- id: bluesky_footer
+  translation: "🦋 bluesky"
