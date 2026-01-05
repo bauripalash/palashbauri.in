@@ -41,7 +41,8 @@ But interestingly enough, when I dug deeper into the Zig source code, I found ou
 
 The core cli tool is not that much of a problem, it can be easily built with gcc or msvc but I'm struggling with GUI.
 
-Huh ..... I am tired as well as frustrated.
+Hah.. 
+I am tired as well as frustrated.
 
 ---
 
