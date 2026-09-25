@@ -2,7 +2,7 @@
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
 name = "x"
-license = "MIT"
+license = "GPL-3.0"
 description = ""
 homepage = "http://palashbauri.in/"
 tags = []
