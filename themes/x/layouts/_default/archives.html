@@ -13,11 +13,16 @@
 {{end}}
 
 {{ range $pages.GroupByPublishDate "2006" }}
-	<h3>{{ .Key }}</h3>
+    {{ $yearTKey := partial "bnnum.html" (dict "Page" $ "Value" .Key) }}
+	<h3>{{ $yearTKey }}</h3>
  {{ range .Pages.GroupByDate "January" }}
  	<h4>{{ .Key }}</h4>
  	{{ range .Pages }}
-	<p><a href="{{ .Permalink }}">{{ .Title }} </a> : {{ i18n "post_info_date" . }}</p>
+        <p>
+            <a href="{{ .Permalink }}">{{ .Title }} </a> :
+            {{ $dateData := partial "bndate.html" (dict "Page" . "Date" .Date) }}
+            {{ i18n "post_info_date" $dateData }}
+        </p>
 	{{end}}
  {{end}}
 {{ end }}

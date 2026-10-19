@@ -55,10 +55,10 @@
   translation: "{{ .WordCount }}টি শব্দ"
 
 - id: post_date
-  translation: "{{ index $.Site.Data.days_bn ( printf \"%d\" .Date.Weekday ) }}, {{ .Date.Day }} {{ index $.Site.Data.months_bn ( printf \"%d\" .Date.Month ) }} {{ .Date.Year}}"
+  translation: "{{ .Weekday }}, {{ .Day }} {{ .Month }} {{ .Year }} "
 
 - id: post_info_date
-  translation: "{{ index $.Site.Data.months_bn ( printf \"%d\" .Date.Month ) }} {{ .Date.Day }}, {{ .Date.Year}}"
+  translation: "{{ .Month }} {{ .Day }}, {{ .Year }}"
 
 - id: publish_date_full
   translation: '{{ .PublishDate.Day }} {{.PublishDate.Month }} {{ .PublishDate.Year }}'
@@ -82,7 +82,7 @@
   translation: "এক লেখাটি সম্পর্কে কোনো মতামত আছে 🤔? তাহলে আমাকে ইমেল পাঠান (নীচে দেওয়া আছে) কিংবা টুইটারে বা ফেসবুকে আমাকে @bauripalash মেনশন করে পোস্ট করুন 😺!"
 
 - id: lastmod_date_full
-  translation: "✏️ শেষ সম্পাদনাঃ {{ index $.Site.Data.days_bn ( printf \"%d\" .Lastmod.Weekday ) }}, {{ .Lastmod.Day }} {{ index $.Site.Data.months_bn ( printf \"%d\" .Lastmod.Month ) }} {{ .Lastmod.Year}}"
+  translation: "✏️ শেষ সম্পাদনাঃ {{ .Weekday }}, {{ .Day }} {{ .Month }} {{ .Year }}"
 
 - id: permalink
   translation: "📎 লিঙ্ক"
@@ -97,4 +97,4 @@
   translation: "🗞️ ফিড"
 
 - id: bluesky_footer
-  translation: "🦋 ব্লুস্কাই" 
+  translation: "🦋 ব্লুস্কাই"

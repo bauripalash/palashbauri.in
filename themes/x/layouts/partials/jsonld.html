@@ -11,7 +11,7 @@
 }
 </script>
 {{ else if .IsPage }}
-{{ $author :=  or (.Params.author) (.Site.Author.name) }}
+{{ $author :=  or (.Params.author) (.Site.Params.author) }}
 {{ $org_name :=  .Site.Title }}
 <script type="application/ld+json">
 {
@@ -22,7 +22,7 @@
     "headline": "{{ .Title | safeJS }}",
     "alternativeHeadline": "{{ .Params.lead }}",
     "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
-    "inLanguage": {{ .Site.LanguageCode | default "bn-in" }},
+    "inLanguage": {{ .Site.Language.Locale | default "bn-in" }},
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
         "@type": "WebPage",

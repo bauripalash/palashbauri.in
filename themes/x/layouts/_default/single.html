@@ -6,7 +6,19 @@
 
 <div class="post-info">
 <!--Date-->
-{{ if not .Params.NoDate }} {{ i18n "post_date" . }} {{end}} {{ if not .Params.Nowordcount }} | {{ i18n "word_count" . }} {{end}} {{ if not .Params.Noreadtime }}   | {{ i18n "read_time" .ReadingTime }} {{end}}
+
+{{ if not .Params.NoDate }}
+    {{ $dateData := partial "bndate.html" (dict "Page" . "Date" .Date) }}
+    {{ i18n "post_date" $dateData }}
+{{end}}
+{{ if not .Params.Nowordcount }}
+    {{ $wordcountData := partial "bnnum.html" (dict "Page" . "Value" .WordCount) }}
+    | {{ i18n "word_count" (dict "WordCount" $wordcountData) }}
+{{end}}
+{{ if not .Params.Noreadtime }}
+    {{ $readtimeData := partial "bnnum.html" (dict "Page" . "Value" .ReadingTime) }}
+    | {{ i18n "read_time" (dict "Count" $readtimeData) }}
+{{end}}
 
 
 </div>
@@ -36,28 +48,28 @@
 	{{end}}
 </div>
 
-<div class="post-linfo">{{ if not .Params.Noshowlastmod }} {{ i18n "lastmod_date_full" . }} | {{end}} <a href="{{.Permalink}}">{{ i18n "permalink" }}</a></div>
+<div class="post-linfo">
+    {{ if not .Params.Noshowlastmod }}
+        {{ $lastmodData := partial "bndate.html" (dict "Page" . "Date" .Lastmod) }}
+        {{ i18n "lastmod_date_full" $lastmodData }} |
+    {{end}}
+    <a href="{{.Permalink}}">{{ i18n "permalink" }}</a></div>
 </article>
 
 {{ if not .Params.Noshare }}
-
-{{ partial "extras/share.html" . }}
-
-
+    {{ partial "extras/share.html" . }}
 {{end}}
 
 {{ if not .Params.Nocomment }}
- 
-<div class="comment">
-	{{ i18n "comment" }}
-</div>
-
+    <div class="comment">
+    	{{ i18n "comment" }}
+    </div>
 {{end}}
 
 <!--Prev/Next-->
 {{ if not .Params.Nonextprev }}
 <div class="np-nav">
-	<div class="prev-post">{{with .Prev}}<a href="{{.RelPermalink}}">{{.Title}}</a> <div class="indicator">👈</div> {{end}}</div> 
+	<div class="prev-post">{{with .Prev}}<a href="{{.RelPermalink}}">{{.Title}}</a> <div class="indicator">👈</div> {{end}}</div>
 	<div class="next-post">{{with .Next}}<a href="{{.RelPermalink}}">{{.Title}}</a> <div class="indicator">👉</div> {{end}}</div>
 </div>
 
@@ -68,7 +80,7 @@
 {{ partial "extras/askdonate.html" . }}
 
 <!--Related-->
-{{ if not .Params.Norelated }} 
+{{ if not .Params.Norelated }}
 {{$related := .Site.RegularPages.Related . | first 5}}
 {{with $related}}
 <h3>{{ i18n "read_more" }}</h3>

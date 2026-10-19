@@ -4,8 +4,8 @@ description = "About Me"
 images = [
   "https://b.og.palashbauri.in/api/og?gh=bauripalash&title=Hi%20%F0%9F%91%8B%2C%20%20I%20am%20Palash%20Bauri%20&blog=Adventure%20of%20Palash%20Bauri&date=2023-11-25T11%3A26%3A49.809Z"
 ]
-lastmod = 2023-11-25T00:00:00.000Z
-showtoc = false
+lastmod = 2026-10-19T21:01:00+05:30
+showtoc = true
 noreadtime = true
 nocomment = true
 noshare = true
@@ -16,59 +16,115 @@ nodate = true
 norss = true
 norelated = true
 +++
-Hi 👋, I am Palash Bauri
+Hi 👋 I am Palash Bauri.
 
-I am 23 year old *kid* from West Bengal, India, pursuing Bachelor's of English from Netaji Subhas Open University.
+## Who am I
 
-![](/images/palash_irl.webp?#round)
+I am a 25-year-old *kid* from West Bengal, India. I am a developer, student, and writer. Outside of my formal education, I enjoy building computer programs and writing literature. I like to read fiction, non-fiction, and comics. I enjoy reading everything from classical epics to modern writings across different genres and languages. In fiction, my favorite genres are science fiction, suspense, and historical fiction. In non-fiction, my two favorite subjects are history and science. In comics, I read across different formats, genres, and languages. I sometimes draw pixel art. I sometimes do photography.
 
-## Interests
+## What I do
 
-My interests are very broad, most prominent ones are Comuters, Technology and Literature.
+I have been writing short stories and poetry since I was 5-6 years old. My poetry was first published at the age of 7 in a magazine. Since then, I have been writing stories of all lengths, essays, and poems in Bengali and English.
 
-At the age of 7, I first poem got published in Magazine. Since then I have written more than hundred short stories, poems in both English and Bengali. Bengali is my native language. My writings consist of science fiction, social drama, suspense which mostly targets children and teenagers (yes, complicated mix).
+I write essays on many topics. The topics cover science, technology, philosophy, psychology, sociology, and whatever else my mind takes me to. Many of them have found their way into magazines and newspapers. Others have stayed in the forgotten archive of my notepad. My stories are kind of similar. I have never stayed in one genre. I switch from science fiction to social commentary to folk tales to horror to comedy. I aim my writing at teenagers and young adults, so I use simpler words and structures. Well, poetry is a different story. Despite trying to keep it simple, sometimes I accidentally end up exploring complicated topics.
 
-Apart from these, I write essays on topics such as science, psychology and philosophy in Bengali Language.
+While I was writing prose and poetry and still going to school, I got my first computer in 2014. Since then, I've been writing all kinds of computer programs, and some have managed to brick my computer at least twice. Over the years, I have written everything from games to a compiler to something very silly. Some of them were smaller personal utilities, while others were big projects that took me years to complete. Few became popular, some were stopped midway, and few disappeared into the forgotten corner of my computer.
 
-In 2022, my first book got published, **"আকাশগল্প"** (English name : **"Aakashgolpo"**, meaning, Tale of Sky) ISBN: 978-93-91776-10-7.  Which is a collection of few of my selected Bengali essays in topics such as Science, Philosophy, Psychology and some other randoms.
+I was selected as a finalist in Google Code-in 2018 by Digital Impact Alliance for my contribution to open-source work. At that time, I was in 12th grade.
 
-I also very much fond of reading. I have read more than hundred fiction books, which includes Novels, Short Stories, Poems etc. My favorite genres to read in fiction are science fiction, suspense and historical fictions. I have read plenty of non-fictions, which mostly consisted of History and Science. I also like reading Comics, Mangas (Japanese comics), Manhwas (korean comics, also known as webtoons).
+## What did I study formally
 
-I also love watching movies, animes, web series and documentaries, and recently I have started watching some korean dramas.
+I completed high school. I then completed a Diploma in Elementary Education in 2022. I then enrolled at NSOU and completed my bachelor's degree in English by early 2026. I am currently pursuing a master's degree in English.
 
-Finally, I write softwares, from intriguing to just straight up silly things. I have been working on developing a programming language for the Bengali Language which is almost complete. I am not that into building websites and working on servers like people usually suspect. You can find more about my current projects on [github.com/bauripalash](https://github.com/bauripalash)
+## What I have built and written:
 
-### Favorites
+### Literature:
 
-This is a very complicated topic, in movies my most loved ones are (but not limited to) — **Fight Club**, **Dead Poet Society**, **Good Will Hunting**, **Black Panther** etc.
+Some notable publications are:
 
-My few of the most loved web series and TV Shows are (excluding animated ones) **Dark**, **Friends**, **The Boys**, **Loki**, **Mind Your Language** etc.
+* **আকাশগল্প (Aakashgolpo; Translation: Tale of Sky; ISBN: 978-93-91776-10-7):** This is my book of selected essays. Rupali Publisher in Kolkata published it in August 2022. This book contains essays written from my teenage years through adulthood. The selection contains essays on psychology, education, sociology, physics, and philosophy. It also includes essays on my own theories about society.
+* **স্লো-মোশন (Slow-motion): a** Bengali short story published in the September 2019 edition of Kishore Bharati magazine. The magazine selected my story for the district-wise short stories competition. I was selected to represent my district along with two other writers in the competition. It was a short science fiction story.
+* **অতীতের দর্পণ (Mirror of the Past):** A Bengali science article in Jnan-O-Bijnan, the science magazine of Bangiya Bijnan Parishad. The article appeared in the May 2021 issue (74th year, 5th issue), page 243. This article is about light, the delay in our vision, and how light can function as a time machine. Funnily enough, the essay and method feel like a science fiction story until you look into the actual science.
+* **গাছের পাতা কেন সবুজ (Why tree leaves are green).** A Bengali science article published in the newspaper সুখবর (SUKHABAR) on November 10, 2025. It's about how we see the colors of objects, and what colors we would see if we perceived colors differently.
 
-My favorite animes include Naruto, Naruto Shippuden, Attack on Titan, Chainsaw Man, Vinland Saga, Tokyo Ghoul, Tokyo Revengers etc.
+### Computer programs:
 
-My favorite books include, in English, 1984 by George Orwell, The War of the Worlds by H. G. Wells, The Diary of a Young Girl by Anne Frank, Rita Hayworth and Shawshank Redemption by Stephen King; in Bengali, বিশ্বাসঘাতক (Biswasghatak ; Trans. Traitor) by Narayan Sanyal, চাঁদের পাহাড় (Chander Pahar, Trans. The Mountain of the Moon) any many more but most them are not books per se but novels later published as Books in recent years, such as দেবদাস (Devdas), চরিত্রহীন (Choritrohin, Trans. Debauched) , মেজ দিদি, বিন্দুর ছেলে by Sarat Chandra Chattopadhyay,  পথের পাঁচালি (Pather Panchali by Bibhutibhushan Bandyopadhyay, , প্রফেসর শঙ্কু সমগ্র, কিরীটি সমগ্র, বোমকেস বক্সী সমগ্র etc.
+Some notable software projects include the following:
 
-Now, my favourite comics include Watchmen by Alan Moore, The Sandman by Neil Gaiman, Marvel 1602 by Andy Kubert, Batman: Year One by Frank Miller and David Mazzucchelli etc.
+* **Pankti Programming Language:** a practical Bengali programming language. I wrote the current interpreter in C. The language and interpreter have seen many changes since 2019. The current interpreter uses a bytecode compiler and virtual machine. The goal was to make a practical programming language for Bengali speakers. In the past, quite a few Bengali programming languages were created. But most of them were intended as educational tools and toys. I wanted something practical, so I built Pankti on my own. I developed earlier versions of the interpreter in Go, Rust, and Zig. I am still working on it, fixing bugs and adding missing features that can be useful.
+* **BauriPixel:** a cross-platform and lightweight pixel art editor. I wrote it in C with raylib as the graphics backend. It has pixel-perfect drawing tools, layers, and animation. As I am still working on it, features are being added and removed all the time.
+* **tkhtmlview:** an open-source lightweight HTML rendering widget for Python's Tkinter applications. It started as a fork of an abandoned library, *tk\_html\_widgets,* which I found when I was trying to build a Markdown editor in Python. Initially, I fixed some compatibility issues and added remote image support. Later it went through many small to big rewrites. New features were also added thanks to community contributions.
+* **ecoHexFarm: ecoHexFarm is also known as Ecological Hexa(gonal/decimal) Farming Game.** It was my first game jam game, created for the raylib 6.x game jam with the theme "Hex + Merge". The game has autonomous, evolvable bugs. Their genetic traits are represented through RGB colors. The bugs' health is represented by red, speed by green, and detection range by blue. Players can visually understand the stats from the bugs' color. Two healthy bugs merge and create an offspring. The offspring will inherit the parents' genes with a random mutation.
+* **ESP32 Handheld:** While bored one day, I found an ESP32 microcontroller lying around. I started tinkering with it and accidentally ended up making a custom handheld. I added a ST7735 display and a PlayStation-controller-style joystick and made drivers for them. I also made a custom graphical interface with navigational controls. On the software side, I implemented the UI and the drivers in MicroPython, Rust, and C++.
 
-Favorite mangas include Fullmetal Alchemist by Hiromu Arakawa, Spy × Family by Tatsuya Endo, Attack on Titan by Hajime Isayama ReLIFE by Yayoi Sou, Black Clover by Tabata Yuuki, Sentai Daishikkaku by Haruba Negi, Hinamatsuri by Ohtake Masao, Gokushufudou by Oono Kousuke, GTO: Great Teacher Onizuka by Fujisawa Tohru etc.
+## What I read and liked most:
 
-I have read quite alot of Manhwas, here are some favorites The Greatest Estate Developer, A Returner's Magic Should Be Special  The Return of the Disaster-Class Hero, The Academy's Undercover Professor, Cleric of Decay, Flawed Almighty, Omniscient Reader, Noblesse etc
+I have read hundreds of books and comics since childhood. I am mentioning only the ones I liked most here.
 
-Here are some manhua that I like, I'm Really Not the Devil's Lackey, The Devil Butler, Way to Be the Evil Emperor,My Wife Is a Demon Queen, B Is for Boss, etc.
+### Prose Literature:
+
+English-language works include:
+
+* **1984** by George Orwell
+* **The War of the Worlds** by H. G. Wells
+* **Rita Hayworth and Shawshank Redemption** by Stephen King
+* **The Diary of a Young Girl** by Anne Frank
+
+The Bengali-language works include:
+
+* **চাঁদের পাহাড় (Chander Pahar, Transl. The Mountain of the Moon)** by Bibhutibhushan Bandyopadhyay
+* **দেবদাস (Devdas)**, **চরিত্রহীন (Choritrohin, Transl. Debauched)**, **মেজ দিদি** and **বিন্দুর ছেলে** by Sarat Chandra Chattopadhyay.
+* **পথের পাঁচালি (Pather Panchali)** by Bibhutibhushan Bandyopadhyay
+* **প্রফেসর শঙ্কু সিরিজ** by Satyajit Ray
+* **ব্যোমকেশ বক্সী সিরিজ** by Sharadindu Bandyopadhyay
+* **কিরীটি সিরিজ** by Dr. Nihar Ranjan Gupta
+
+Works translated from Russian include:
+
+* **How Man Became a Giant** by M. Ilin and Elena Segal
+* **The Brothers Karamazov** by Fyodor Dostoevsky
+
+Works translated from Chinese include:
+
+* **Journey to the West** by Wu Cheng'en (currently reading)
+
+### Graphic Literature:
+
+Novels include:
+
+* **Watchmen** by Alan Moore
+* **The Sandman** by Neil Gaiman
+* **Marvel 1602** by Neil Gaiman, illustrated by Andy Kubert
+* **Batman: Year One** by Frank Miller and David Mazzucchelli
+
+Serialized ones include:
+
+* **Spy × Family** by Endo Tatsuya
+* **Fullmetal Alchemist** by Arakawa Hiromu
+* **GTO: Great Teacher Onizuka** by Fujisawa Tohru
+* **Hinamatsuri** by Masao Ohtake
+* **The Greatest Estate Developer**
+* **A Returner’s Magic Should Be Special**
+* **Omniscient Reader's Viewpoint**
+* **Noblesse**
+* **I’m Really Not the Devil’s Lackey**
+* **B Is for Boss**
+* **Demonic Emperor**
+* **Moon Knight** series
+* **Infinity Saga** series
+* Iron Man's **Extremis** series
 
 ## Contact Me
 
-If you would like to know me better, or just chat, you can reach me in multiple ways, you can drop me an email (address mentioned in footer), If you use 𝕏 (formerly Twitter), you can DM me at `@bauripalash`. If you use telegram, you can text me at `@bauripalash`. As you can see most of my usernames on the internet are just bauripalash. Feel free to reach me, I always like to talk, I maybe be late but I always reply.
-
-And if wanna send email, keep the subject simple and short, just simple "Hi" , "Hello" are more than enough, otherwise I may accidentally miss them.
+If you would like to know me better, or just chat, you can reach me in many ways. You can drop me an email (address mentioned in the footer). If you use Bluesky, you can text me at @palashbauri.in handle. If you use Instagram, you can text me at @bauripalash. As you can see, most of my usernames on the internet are @bauripalash. Feel free to reach me. I always like to talk. I can be late sometimes, but I always reply. If you want to send an email, keep the subject simple and short. "Hi" or "Hello" is more than enough.
 
 ## How to say my name:
 
 Pronounced like,
 
-* Palash ⇒ **Paw** (like an paw of an cat) + G**lass** (like mirror and stuff)
-* Bauri ⇒Baa (like **Bu**n from burger) + Ow (from C**ow**) + Ree (from *Re*boot)
+* Palash ⇒ **Paw** (like a paw of a cat) + G**lass** (like a a mirror and stuff)
+* Bauri ⇒ **Baa** (like the sound a sheep makes) + Ow (from C**ow**) + Ree (from **Re**boot)
 
 ## Other Interesting Pages:
 
-* [iWatched](https://palashbauri.in/iwatched/) — My Personal Rating of Movies, Dramas, Animes I have watched.
+* [iWatched](https://palashbauri.in/iwatched/) — My Personal Rating of Movies, Dramas, and Anime I Have Watched.

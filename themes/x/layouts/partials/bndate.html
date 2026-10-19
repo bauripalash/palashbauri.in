@@ -1,0 +1,19 @@
+{{ $page := .Page }}
+{{ $date := .Date }}
+
+{{ $weekday := printf "%d" $date.Weekday }}
+{{ $month := printf "%d" $date.Month }}
+{{ $day := printf "%d" $date.Day }}
+{{ $year := printf "%d" $date.Year }}
+
+{{ if eq $page.Lang "bn" }}
+    {{ $weekday = index hugo.Data.days_bn (printf "%d" $date.Weekday) }}
+    {{ $month = index hugo.Data.months_bn (printf "%d" $date.Month) }}
+    {{ $day = partial "bnnum.html" (dict "Page" $page "Value" $date.Day) }}
+    {{ $year = partial "bnnum.html" (dict "Page" $page "Value" $date.Year) }}
+{{ else }}
+    {{ $weekday = $date.Format "Monday" }}
+    {{ $month = $date.Format "January" }}
+{{ end }}
+
+{{ return dict "Weekday" $weekday "Day" $day "Month" $month "Year" $year }}

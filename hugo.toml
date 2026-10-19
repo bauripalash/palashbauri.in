@@ -5,11 +5,9 @@ theme = "x"
 copyright = "© Copyright Palash Bauri"
 timezone = "Asia/Kolkata"
 enableGitInfo = true
-languageCode = "en-us"
 enableRobotsTXT = true
 enableEmoji = true
 defaultContentLanguage = "en"
-language = "en"
 
 [permalinks]
 	posts = "/:filename/"
@@ -21,7 +19,8 @@ language = "en"
 
 [languages]
 	[languages.en]
-	languageName = "English"
+	label = "English"
+	locale = "en-us"
 	contentDir = "content/english"
 	weight = 1
 
@@ -60,7 +59,8 @@ language = "en"
 		url = "/feed.xml"
 		weight = 3
 	[languages.bn]
-		languageName = "Bengali"
+		label = "Bengali"
+		locale = "bn-in"
 		weight = 2
 		title = "পলাশের অভিযান"
 		contentDir = "content/bengali"
@@ -168,7 +168,7 @@ language = "en"
 	disabled = false
 	simple = true
 
-[privacy.twitter]
+[privacy.x]
 	disabled = false
 	enableDNT = true
 	simple = true
@@ -177,7 +177,7 @@ language = "en"
 	disabled = false
 	privacyEnhanced = true
 
-[services.twitter]
+[services.x]
 	disableInlineCSS = true
 
 [frontmatter]

@@ -44,10 +44,10 @@
   translation: "{{ .WordCount }} words"
 
 - id: post_date
-  translation: "{{ .Date.Format \"Mon, January 2, 2006\" }}"
+  translation: "{{ .Weekday }}, {{ .Month }} {{ .Day }}, {{ .Year }}"
 
 - id: post_info_date
-  translation: "{{ .Date.Format \"January 2, 2006\" }}"
+  translation: "{{ .Month }} {{ .Day }}, {{ .Year }}"
 
 
 - id: publish_date_full
@@ -81,7 +81,7 @@
   translation: "📎 permalink"
 
 - id: lastmod_date_full
-  translation: "✏️ Last edited: {{ .Lastmod.Format \"Mon, January 2, 2006\" }}"
+  translation: "✏️ Last edited: {{ .Weekday }}, {{ .Day }} {{ .Month }} {{ .Year }}"
 
 - id: twitter_footer
   translation: "𝕏 twitter"

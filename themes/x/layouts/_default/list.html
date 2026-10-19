@@ -27,15 +27,26 @@
 		<div class="postcard">
 			<h2 class="postcard-title">{{ .Title }}</h2>
 			<div class="postcard-summary">
-				{{ .Summary | truncate 180  }}				
+				{{ .Summary | truncate 180 | plainify }}
 			</div>
 			<div class="postcard-info">
-				{{ i18n "post_info_date" . }} | {{ i18n "word_count" . }} | {{ i18n "read_time" .ReadingTime }}
+			{{ if not .Params.NoDate }}
+                {{ $dateData := partial "bndate.html" (dict "Page" . "Date" .Date) }}
+                {{ i18n "post_info_date" $dateData }}
+			{{end}}
+			{{ if not .Params.Nowordcount }}
+                {{ $wordcountData := partial "bnnum.html" (dict "Page" . "Value" .WordCount) }}
+                | {{ i18n "word_count" (dict "WordCount" $wordcountData) }}
+			{{end}}
+			{{ if not .Params.Noreadtime }}
+                {{ $readtimeData := partial "bnnum.html" (dict "Page" . "Value" .ReadingTime) }}
+                | {{ i18n "read_time" (dict "Count" $readtimeData) }}
+			{{end}}
 			</div>
 		</div>
 	</a>
 
-	
+
 
 	{{end}}
 
