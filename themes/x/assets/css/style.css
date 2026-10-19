@@ -407,3 +407,9 @@ a.page-next {
   margin-top: 10px;
   font-size: 18px;
 }
+
+
+.roundimg {
+  object-fit: cover;
+  border-radius: 50% !important;
+}

@@ -18,8 +18,9 @@ norelated = true
 +++
 Hi 👋 I am Palash Bauri.
 
-## Who am I
+<img src="/images/palash_irl.webp" alt="Palash Bauri" class="roundimg">
 
+## Who am I
 I am a 25-year-old *kid* from West Bengal, India. I am a developer, student, and writer. Outside of my formal education, I enjoy building computer programs and writing literature. I like to read fiction, non-fiction, and comics. I enjoy reading everything from classical epics to modern writings across different genres and languages. In fiction, my favorite genres are science fiction, suspense, and historical fiction. In non-fiction, my two favorite subjects are history and science. In comics, I read across different formats, genres, and languages. I sometimes draw pixel art. I sometimes do photography.
 
 ## What I do
